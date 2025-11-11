@@ -10,7 +10,7 @@
 
 ## 项目简介
 
-这是 Renomee AI https://xiaojingjia.top智能文件重命名工具的官方网站源码，基于 React + TypeScript + Tailwind CSS 开发。
+这是 Renomee AI https://xiaojingjia.top 智能文件重命名工具的官方网站源码，基于 React + TypeScript + Tailwind CSS 开发。
 
 **Renomee** 是一款革命性的文件重命名工具，通过 AI 技术让文件管理变得简单高效。
 
