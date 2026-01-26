@@ -1,0 +1,98 @@
+site_name: Renomee AI 文档
+site_url: https://renomee.readthedocs.io
+site_description: Renomee - AI智能文件重命名工具使用指南
+site_author: Renomee Team
+
+# 仓库信息
+repo_url: https://github.com/hetianhe2024/renomee
+repo_name: hetianhe2024/renomee
+edit_uri: edit/main/docs/
+
+# 主题配置
+theme:
+  name: material
+  language: zh
+  palette:
+    # 浅色模式
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    # 深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  features:
+    - navigation.instant      # 即时加载
+    - navigation.tracking     # 跟踪锚点
+    - navigation.tabs         # 顶部导航标签
+    - navigation.sections     # 导航分组
+    - navigation.top          # 返回顶部按钮
+    - search.suggest          # 搜索建议
+    - search.highlight        # 搜索高亮
+    - content.code.copy       # 代码复制按钮
+  icon:
+    repo: fontawesome/brands/github
+
+# 导航结构
+nav:
+  - 首页: index.md
+  - 快速开始: quickstart.md
+  - 用户指南:
+      - 安装说明: guide/installation.md
+      - 基础使用: guide/basic-usage.md
+      - 高级功能: guide/advanced-features.md
+  - 常见问题: faq.md
+  - 关于:
+      - 更新日志: about/changelog.md
+      - 隐私政策: about/privacy.md
+
+# Markdown 扩展
+markdown_extensions:
+  - admonition                # 提示框
+  - pymdownx.details          # 可折叠提示框
+  - pymdownx.superfences      # 代码块增强
+  - pymdownx.highlight:       # 代码高亮
+      anchor_linenums: true
+  - pymdownx.inlinehilite     # 行内代码高亮
+  - pymdownx.snippets         # 代码片段
+  - pymdownx.tabbed:          # 标签页
+      alternate_style: true
+  - tables                    # 表格支持
+  - toc:                      # 目录
+      permalink: true
+      title: 目录
+  - attr_list                 # 属性列表
+  - md_in_html                # HTML 中的 Markdown
+  - pymdownx.emoji:           # Emoji 支持
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# 额外配置
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://xiaojingjia.top
+      name: 官方网站
+    - icon: fontawesome/brands/github
+      link: https://github.com/hetianhe2024/renomee
+      name: GitHub
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX  # 替换为您的 Google Analytics ID
+  version:
+    provider: mike
+
+# 插件
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
