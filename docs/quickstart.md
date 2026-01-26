@@ -6,7 +6,7 @@
 
 ### Windows 用户
 
-1. 访问 [官方网站](https://xiaojingjia.top) 
+1. 访问 [官方网站](https://renomeeai.com/) 
 2. 点击 **"下载 Windows 版本"** 按钮
 3. 下载完成后，双击 `Renomee-Setup.exe`
 4. 按照安装向导提示完成安装
@@ -18,7 +18,7 @@
 
 ### macOS 用户
 
-1. 访问 [官方网站](https://xiaojingjia.top)
+1. 访问 [官方网站](https://renomeeai.com/)
 2. 点击 **"下载 macOS 版本"** 按钮
 3. 打开下载的 `.dmg` 文件
 4. 将 Renomee 拖动到应用程序文件夹

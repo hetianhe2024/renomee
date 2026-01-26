@@ -28,7 +28,7 @@
 
 ### 方式 1：官方网站（推荐）
 
-访问 [Renomee 官网](https://xiaojingjia.top)，网站会自动检测您的操作系统并推荐相应版本。
+访问 [Renomee 官网](https://renomeeai.com/)，网站会自动检测您的操作系统并推荐相应版本。
 
 ### 方式 2：GitHub Releases
 

@@ -1,6 +1,6 @@
 # Renomee AI - 智能文件重命名工具
 
-![Renomee Logo](https://xiaojingjia.top/static/media/logo.png)
+![Renomee Logo](https://renomeeai.com//static/media/logo.png)
 
 欢迎使用 **Renomee AI**，这是一款革命性的智能文件重命名工具，让文件管理变得简单高效！
 
@@ -18,7 +18,7 @@
 
 ### 安装 Renomee
 
-1. 访问 [官方网站](https://xiaojingjia.top) 下载安装包
+1. 访问 [官方网站](https://renomeeai.com/) 下载安装包
 2. 运行安装程序，按照向导完成安装
 3. 启动 Renomee，开始您的智能重命名之旅
 
@@ -102,7 +102,7 @@ VID00023.mp4 → 【教程】PS技巧-第05集-图层混合.mp4
 
 ## 🔗 相关链接
 
-- [官方网站](https://xiaojingjia.top)
+- [官方网站](https://renomeeai.com/)
 - [GitHub 仓库](https://github.com/hetianhe2024/renomee)
 - [更新日志](about/changelog.md)
 - [隐私政策](about/privacy.md)

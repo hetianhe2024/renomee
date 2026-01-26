@@ -215,5 +215,5 @@
 想第一时间了解新版本发布？
 
 - ⭐ [Star on GitHub](https://github.com/hetianhe2024/renomee) - 接收 Release 通知
-- 📧 [订阅邮件列表](https://xiaojingjia.top/subscribe) - 每月更新摘要
+- 📧 [订阅邮件列表](https://renomeeai.com//subscribe) - 每月更新摘要
 - 🐦 [关注 Twitter](https://twitter.com/renomee_ai) - 实时更新动态

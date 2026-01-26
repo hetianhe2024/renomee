@@ -287,7 +287,7 @@ privacy@xiaojingjia.top
 [公司地址]
 
 **💬 在线咨询：**
-[官网聊天窗口](https://xiaojingjia.top)
+[官网聊天窗口](https://renomeeai.com/)
 
 **响应时间：** 工作日 24 小时内
 
@@ -302,7 +302,7 @@ privacy@xiaojingjia.top
 - 数据泄露事件（如有）
 - 隐私改进措施
 
-最新报告：[2024 年度透明度报告](https://xiaojingjia.top/transparency)
+最新报告：[2024 年度透明度报告](https://renomeeai.com//transparency)
 
 ---
 
