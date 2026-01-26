@@ -12,6 +12,7 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   language: zh
+  custom_dir: docs/.overrides
   palette:
     # 浅色模式
     - media: "(prefers-color-scheme: light)"
@@ -89,13 +90,6 @@ extra:
     property: G-XXXXXXXXXX  # 替换为您的 Google Analytics ID
   version:
     provider: mike
-  
-  # 搜索引擎验证（用于站长工具）
-  meta:
-    - name: google-site-verification
-      content: yfiZA4-AOQ7y8gay1A8hp88SJD_DcgyjEcoBKTjYUx0
-    - name: msvalidate.01
-      content: FDEAAAFBAE6123C7ED6AEDDE56CA89BC
 
 # 插件
 plugins:
