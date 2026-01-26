@@ -79,7 +79,7 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/solid/globe
-      link: https://xiaojingjia.top
+      link: https://renomeeai.com
       name: 官方网站
     - icon: fontawesome/brands/github
       link: https://github.com/hetianhe2024/renomee
@@ -89,6 +89,13 @@ extra:
     property: G-XXXXXXXXXX  # 替换为您的 Google Analytics ID
   version:
     provider: mike
+  
+  # 搜索引擎验证（用于站长工具）
+  meta:
+    - name: google-site-verification
+      content: yfiZA4-AOQ7y8gay1A8hp88SJD_DcgyjEcoBKTjYUx0
+    - name: msvalidate.01
+      content: FDEAAAFBAE6123C7ED6AEDDE56CA89BC
 
 # 插件
 plugins:
