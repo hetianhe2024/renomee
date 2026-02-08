@@ -1,3 +1,8 @@
+---
+title: Renomee AI - 智能文件重命名工具官方文档
+description: Renomee AI 是一款革命性的智能文件重命名工具，支持 AI 智能识别、自然语言规则、批量处理，让文件管理变得简单高效。适用于 Windows 和 macOS 系统。
+---
+
 # Renomee AI - 智能文件重命名工具
 
 ![Renomee Logo](https://renomeeai.com//static/media/logo.png)

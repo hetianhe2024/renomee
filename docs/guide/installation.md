@@ -1,3 +1,8 @@
+---
+title: Renomee AI 详细安装说明 - Windows 和 macOS 完整教程
+description: Renomee AI 详细安装指南，包含系统要求、下载方式、Windows 和 macOS 安装步骤、便携版使用、安全设置、包管理器安装、更新和卸载教程。
+---
+
 # 安装说明
 
 本页提供 Renomee AI 的详细安装指南和系统要求。

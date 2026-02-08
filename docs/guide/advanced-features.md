@@ -1,3 +1,8 @@
+---
+title: Renomee AI 高级功能 - 正则表达式、脚本模式和批量操作
+description: Renomee AI 高级功能教程，包含正则表达式模式、JavaScript 脚本模式、批量导入导出、预设管理、命令行模式等专业级功能详解。
+---
+
 # 高级功能
 
 本指南介绍 Renomee AI 的高级功能和专业技巧。

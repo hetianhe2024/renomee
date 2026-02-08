@@ -1,3 +1,8 @@
+---
+title: Renomee AI 快速开始 - 5分钟上手指南
+description: 详细的 Renomee AI 快速开始指南，包含 Windows 和 macOS 的下载安装步骤、第一次使用教程、变量使用技巧和 AI 智能模式说明。
+---
+
 # 快速开始
 
 本指南将帮助您在 5 分钟内开始使用 Renomee AI。
