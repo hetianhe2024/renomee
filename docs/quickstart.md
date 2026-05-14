@@ -148,15 +148,22 @@ Renomee 支持强大的变量系统：
 
 ### AI 智能模式
 
-启用 AI 模式后，Renomee 会分析文件内容：
+启用 AI 模式后，Renomee 会深度分析文件内容（支持大文件和 OCR）：
 
 ```
-照片文件 → 自动识别拍摄地点、主题
-文档文件 → 提取标题和关键词
-音视频 → 识别标题、艺术家信息
+照片文件 → 自动识别拍摄地点、主题、EXIF 信息
+         → OCR 识别截图、证件照中的文字内容
+文档文件 → 提取标题、作者、正文内容（支持 50MB 大文件）
+         → 扫描版 PDF 自动 OCR 识别
+音视频 → 识别标题、艺术家、分辨率等信息
 ```
 
-查看 [基础使用指南](guide/basic-usage.md) 了解更多 AI 功能。
+!!! tip "新功能亮点"
+    - 🖼️ **OCR 识别** - 扫描版 PDF、图片文字自动识别
+    - 📦 **大文件支持** - 支持 50MB 以内 PDF/Word/Excel
+    - ⚡ **批量处理** - 队列化架构，实时进度反馈
+
+查看 [基础使用指南](guide/basic-usage.md#ai-智能模式) 了解更多 AI 功能。
 
 ## ❓ 遇到问题？
 
@@ -168,9 +175,16 @@ Renomee 支持强大的变量系统：
 
 ## 📚 下一步
 
-- 📖 [安装详细说明](guide/installation.md)
-- 🎯 [基础使用教程](guide/basic-usage.md)
-- 🚀 [高级功能](guide/advanced-features.md)
+- 📖 [安装详细说明](guide/installation.md) - 系统要求和安装选项
+- 🎯 [基础使用教程](guide/basic-usage.md) - 核心功能和操作指南
+  - 🖼️ OCR 智能识别
+  - 📦 大文件支持（50MB）
+  - ⚡ 批量处理进度
+- 🚀 [高级功能](guide/advanced-features.md) - 文件内容智能提取
+  - 📄 PDF/Word/Excel 内容提取
+  - 🖼️ 图片 EXIF + OCR
+  - 🎵 音视频元数据
+- ❓ [常见问题](faq.md) - 问题排查和解答
 
 ---
 
