@@ -117,17 +117,69 @@ extra:
     provider: mike
   # SEO 优化
   generator: false  # 移除 MkDocs 生成器标签
-  alternate:
-    - name: 简体中文
-      link: /
-      lang: zh
-    - name: English
-      link: /en/
-      lang: en
 
 # 插件
 plugins:
-  - search:
-      lang:
-        - zh
-        - en
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: zh
+          default: true
+          name: 简体中文
+          build: true
+          nav_translations:
+            首页: 首页
+            快速开始: 快速开始
+            用户指南: 用户指南
+            安装说明: 安装说明
+            基础使用: 基础使用
+            高级功能: 高级功能
+            操作指南: 操作指南
+            文件类型: 文件类型
+            PDF 文件: PDF 文件
+            图片照片: 图片照片
+            办公文档: 办公文档
+            音频文件: 音频文件
+            视频文件: 视频文件
+            使用场景: 使用场景
+            下载整理: 下载整理
+            学术研究: 学术研究
+            商务文档: 商务文档
+            媒体管理: 媒体管理
+            工具对比: 工具对比
+            常见问题: 常见问题
+            关于: 关于
+            更新日志: 更新日志
+            隐私政策: 隐私政策
+        - locale: en
+          name: English
+          build: true
+          nav_translations:
+            首页: Home
+            快速开始: Quick Start
+            用户指南: User Guide
+            安装说明: Installation
+            基础使用: Basic Usage
+            高级功能: Advanced Features
+            操作指南: How-To Guides
+            根据标题重命名 PDF: Rename PDFs by Title
+            文件类型: File Types
+            PDF 文件: PDF Files
+            图片照片: Images & Photos
+            办公文档: Documents
+            音频文件: Audio Files
+            视频文件: Video Files
+            使用场景: Use Cases
+            下载整理: Downloads
+            学术研究: Research
+            商务文档: Business
+            媒体管理: Media
+            工具对比: Alternatives
+            常见问题: FAQ
+            关于: About
+            更新日志: Changelog
+            隐私政策: Privacy Policy
+  - search
