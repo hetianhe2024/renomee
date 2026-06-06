@@ -331,7 +331,7 @@ renomee --rule "{date}_{n3}{ext}" --path "/photos"
    - 菜单 → 升级到专业版 → 选择支付方式
 
 2. **官网购买**
-   - 访问 [https://renomeeai.com/pricing](https://xiaojingjia.top)
+   - 访问 [Renomee AI 定价方案](https://renomeeai.com/product/pricing/)
 
 3. **授权码购买**
    - 联系 sales@xiaojingjia.top
@@ -442,7 +442,7 @@ renomee --rule "{date}_{n3}{ext}" --path "/photos"
 - B站频道
 
 **📝 博客文章：**
-- [官方博客](https://renomeeai.com//blog)
+- [Renomee AI 官方博客](https://renomeeai.com/blog/)
 - 用户案例分享
 
 **💬 社区资源：**

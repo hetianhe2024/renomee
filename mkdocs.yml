@@ -46,11 +46,66 @@ theme:
 nav:
   - 首页: index.md
   - 快速开始: quickstart.md
+  
   - 用户指南:
       - 安装说明: guide/installation.md
       - 基础使用: guide/basic-usage.md
       - 高级功能: guide/advanced-features.md
+  
+  - 操作指南:
+      - how-to/index.md
+      - 根据标题重命名 PDF: how-to/rename-pdf-by-title.md
+  
+  - 文件类型:
+      - file-types/index.md
+      - PDF 文件: file-types/pdf/index.md
+      - 图片照片: file-types/images/index.md
+      - 办公文档: file-types/documents/index.md
+      - 音频文件: file-types/audio/index.md
+      - 视频文件: file-types/video/index.md
+  
+  - 使用场景:
+      - use-cases/index.md
+      - 下载整理: use-cases/downloads/index.md
+      - 学术研究: use-cases/research/index.md
+      - 商务文档: use-cases/business/index.md
+      - 媒体管理: use-cases/media/index.md
+  
+  - 工具对比:
+      - alternatives/index.md
+  
   - 常见问题: faq.md
+  
+  - English:
+      - Home: en/index.md
+      - Quick Start: en/quickstart.md
+      - Installation: en/installation.md
+      - Basic Usage: en/basic-usage.md
+      - FAQ: en/faq.md
+      - Changelog: en/changelog.md
+      
+      - How-To Guides:
+          - en/how-to/index.md
+          - Rename PDFs by Title: en/how-to/rename-pdf-by-title.md
+      
+      - File Types:
+          - en/file-types/index.md
+          - PDF Files: en/file-types/pdf/index.md
+          - Images & Photos: en/file-types/images/index.md
+          - Documents: en/file-types/documents/index.md
+          - Audio Files: en/file-types/audio/index.md
+          - Video Files: en/file-types/video/index.md
+      
+      - Use Cases:
+          - en/use-cases/index.md
+          - Downloads: en/use-cases/downloads/index.md
+          - Research: en/use-cases/research/index.md
+          - Business: en/use-cases/business/index.md
+          - Media: en/use-cases/media/index.md
+      
+      - Alternatives:
+          - en/alternatives/index.md
+  
   - 关于:
       - 更新日志: about/changelog.md
       - 隐私政策: about/privacy.md
@@ -96,6 +151,9 @@ extra:
     - name: 简体中文
       link: /
       lang: zh
+    - name: English
+      link: /en/
+      lang: en
 
 # 插件
 plugins:

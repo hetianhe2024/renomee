@@ -588,6 +588,7 @@ Renomee 采用队列化架构，确保处理大量文件时仍然流畅：
 
 现在您已经掌握了 Renomee 的基础用法，可以探索更多高级功能：
 
+- 🌐 [Renomee AI 完整功能介绍](https://renomeeai.com/product/features/) - 查看产品全部功能列表
 - 🚀 [高级功能](advanced-features.md) - 探索更强大的功能
   - 🔥 [文件内容智能提取](advanced-features.md#文件内容智能提取) - PDF/Word/Excel 深度内容提取
   - 🖼️ [OCR 智能兜底机制](advanced-features.md#支持的文件格式与提取规格) - 扫描版 PDF 和图片识别

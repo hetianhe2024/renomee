@@ -11,7 +11,7 @@ description: 详细的 Renomee AI 快速开始指南，包含 Windows 和 macOS 
 
 ### Windows 用户
 
-1. 访问 [官方网站](https://renomeeai.com/) 
+1. 访问 [Renomee AI 官方下载页面](https://renomeeai.com/product/download/)
 2. 点击 **"下载 Windows 版本"** 按钮
 3. 下载完成后，双击 `Renomee-Setup.exe`
 4. 按照安装向导提示完成安装
@@ -23,7 +23,7 @@ description: 详细的 Renomee AI 快速开始指南，包含 Windows 和 macOS 
 
 ### macOS 用户
 
-1. 访问 [官方网站](https://renomeeai.com/)
+1. 访问 [Renomee AI 官方下载页面](https://renomeeai.com/product/download/)
 2. 点击 **"下载 macOS 版本"** 按钮
 3. 打开下载的 `.dmg` 文件
 4. 将 Renomee 拖动到应用程序文件夹
