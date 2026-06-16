@@ -11,6 +11,7 @@ edit_uri: edit/main/docs/
 # 主题配置
 theme:
   name: material
+  language: zh
   custom_dir: docs/.overrides
   palette:
     # 浅色模式
@@ -35,13 +36,14 @@ theme:
     - navigation.tabs         # 顶部导航标签
     - navigation.sections     # 导航分组
     - navigation.top          # 返回顶部按钮
+    - navigation.expand       # 展开导航
     - search.suggest          # 搜索建议
     - search.highlight        # 搜索高亮
     - content.code.copy       # 代码复制按钮
   icon:
     repo: fontawesome/brands/github
 
-# 导航结构
+# 导航结构（更新后）
 nav:
   - 首页: index.md
   - 快速开始: quickstart.md
@@ -51,31 +53,68 @@ nav:
       - 基础使用: guide/basic-usage.md
       - 高级功能: guide/advanced-features.md
   
-  - 操作指南:
-      - how-to/index.md
-      - 根据标题重命名 PDF: how-to/rename-pdf-by-title.md
-  
+  # 新增：文件类型专题
   - 文件类型:
       - file-types/index.md
       - PDF 文件: file-types/pdf/index.md
-      # 暂时隐藏内容不足的页面
-      # - 图片照片: file-types/images/index.md
-      # - 办公文档: file-types/documents/index.md
-      # - 音频文件: file-types/audio/index.md
-      # - 视频文件: file-types/video/index.md
+      - 图片照片: file-types/images/index.md
+      - 办公文档: file-types/documents/index.md
+      - 音频文件: file-types/audio/index.md
+      - 视频文件: file-types/video/index.md
   
+  # 新增：使用场景
   - 使用场景:
       - use-cases/index.md
+      - 下载整理: use-cases/downloads/index.md
       - 学术研究: use-cases/research/index.md
-      # 暂时隐藏内容不足的页面
-      # - 下载整理: use-cases/downloads/index.md
-      # - 商务文档: use-cases/business/index.md
-      # - 媒体管理: use-cases/media/index.md
+      - 商务文档: use-cases/business/index.md
+      - 媒体管理: use-cases/media/index.md
   
-  - 工具对比:
+  # 新增：操作指南
+  - 操作指南:
+      - how-to/index.md
+      # 这里将来添加具体的 how-to 文章
+  
+  # 新增：工具对比
+  - 替代方案:
       - alternatives/index.md
+      # 这里将来添加竞品对比文章
   
   - 常见问题: faq.md
+  
+  # 英文版
+  - English:
+      - Home: en/index.md
+      - Quick Start: en/quickstart.md
+      - Installation: en/installation.md
+      - Basic Usage: en/basic-usage.md
+      - FAQ: en/faq.md
+      - Changelog: en/changelog.md
+      
+      # 新增：英文文件类型
+      - File Types:
+          - en/file-types/index.md
+          - PDF Files: en/file-types/pdf/index.md
+          - Images & Photos: en/file-types/images/index.md
+          - Documents: en/file-types/documents/index.md
+          - Audio Files: en/file-types/audio/index.md
+          - Video Files: en/file-types/video/index.md
+      
+      # 新增：英文使用场景
+      - Use Cases:
+          - en/use-cases/index.md
+          - Downloads: en/use-cases/downloads/index.md
+          - Research: en/use-cases/research/index.md
+          - Business: en/use-cases/business/index.md
+          - Media: en/use-cases/media/index.md
+      
+      # 新增：英文操作指南
+      - How-To Guides:
+          - en/how-to/index.md
+      
+      # 新增：英文工具对比
+      - Alternatives:
+          - en/alternatives/index.md
   
   - 关于:
       - 更新日志: about/changelog.md
@@ -118,78 +157,17 @@ extra:
     provider: mike
   # SEO 优化
   generator: false  # 移除 MkDocs 生成器标签
-
-# 排除文件（不发布）
-exclude_docs: |
-  README_NEW_STRUCTURE.md
-  SEO_CONTENT_PLAN.md
-  assets/README_SCREENSHOTS.md
-  .templates/
+  alternate:
+    - name: 简体中文
+      link: /
+      lang: zh
+    - name: English
+      link: /en/
+      lang: en
 
 # 插件
 plugins:
-  - i18n:
-      docs_structure: folder
-      fallback_to_default: true
-      reconfigure_material: true
-      reconfigure_search: true
-      languages:
-        - locale: zh
-          default: true
-          name: 简体中文
-          build: true
-          site_name: Renomee AI 文档
-          nav_translations:
-            首页: 首页
-            快速开始: 快速开始
-            用户指南: 用户指南
-            安装说明: 安装说明
-            基础使用: 基础使用
-            高级功能: 高级功能
-            操作指南: 操作指南
-            文件类型: 文件类型
-            PDF 文件: PDF 文件
-            图片照片: 图片照片
-            办公文档: 办公文档
-            音频文件: 音频文件
-            视频文件: 视频文件
-            使用场景: 使用场景
-            下载整理: 下载整理
-            学术研究: 学术研究
-            商务文档: 商务文档
-            媒体管理: 媒体管理
-            工具对比: 工具对比
-            常见问题: 常见问题
-            关于: 关于
-            更新日志: 更新日志
-            隐私政策: 隐私政策
-        - locale: en
-          name: English
-          build: true
-          site_name: Renomee AI Documentation
-          nav_translations:
-            首页: Home
-            快速开始: Quick Start
-            用户指南: User Guide
-            安装说明: Installation
-            基础使用: Basic Usage
-            高级功能: Advanced Features
-            操作指南: How-To Guides
-            根据标题重命名 PDF: Rename PDFs by Title
-            文件类型: File Types
-            PDF 文件: PDF Files
-            图片照片: Images & Photos
-            办公文档: Documents
-            音频文件: Audio Files
-            视频文件: Video Files
-            使用场景: Use Cases
-            下载整理: Downloads
-            学术研究: Research
-            商务文档: Business
-            媒体管理: Media
-            工具对比: Alternatives
-            常见问题: FAQ
-            关于: About
-            更新日志: Changelog
-            隐私政策: Privacy Policy
-  - search
+  - search:
+      lang:
+        - zh
+        - en
