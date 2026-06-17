@@ -54,6 +54,9 @@ nav:
   - 操作指南:
       - how-to/index.md
       - 根据标题重命名 PDF: how-to/rename-pdf-by-title.md
+      - 根据内容智能重命名: how-to/rename-files-by-content.md
+      - 自动重命名扫描版 PDF: how-to/rename-scanned-pdfs-automatically.md
+      - 按 EXIF 批量重命名照片: how-to/batch-rename-photos-by-exif.md
   
   - 文件类型:
       - file-types/index.md
@@ -176,6 +179,9 @@ plugins:
             高级功能: Advanced Features
             操作指南: How-To Guides
             根据标题重命名 PDF: Rename PDFs by Title
+            根据内容智能重命名: Rename Files by Content
+            自动重命名扫描版 PDF: Rename Scanned PDFs Automatically
+            按 EXIF 批量重命名照片: Batch Rename Photos by EXIF
             文件类型: File Types
             PDF 文件: PDF Files
             图片照片: Images & Photos

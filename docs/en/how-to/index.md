@@ -18,6 +18,27 @@ Complete solution for batch renaming academic papers, reports, and ebooks. Suppo
 **Difficulty**: ⭐ Beginner  
 **Time**: 5 minutes
 
+### 🧠 [How to Rename Files by Content](rename-files-by-content.md)
+Use AI to read PDFs, images, documents, and videos, then generate meaningful filenames automatically.
+
+**For**: Anyone organizing messy download folders  
+**Difficulty**: ⭐ Beginner  
+**Time**: 10 minutes
+
+### 📑 [How to Rename Scanned PDFs Automatically](rename-scanned-pdfs-automatically.md)
+OCR + AI recognizes scanned document content and turns `scan001.pdf` into descriptive filenames.
+
+**For**: Users archiving scanned documents, office staff  
+**Difficulty**: ⭐⭐ Intermediate  
+**Time**: 10 minutes
+
+### 📸 [How to Batch Rename Photos by EXIF](batch-rename-photos-by-exif.md)
+Extract capture date, camera model, GPS, and other EXIF metadata to organize thousands of photos.
+
+**For**: Photographers, travelers, families  
+**Difficulty**: ⭐ Beginner  
+**Time**: 5 minutes
+
 ---
 
 ## 📚 Coming Soon
@@ -37,7 +58,6 @@ The following tutorials are in development:
 - **How to Organize Contract Documents** - Extract parties and dates
 
 ### 📸 Media Management
-- **How to Batch Rename Photos by Date** - EXIF data extraction and formatting
 - **How to Organize Music Files** - Extract audio metadata (artist, album, title)
 
 ---
@@ -48,11 +68,11 @@ The following tutorials are in development:
 
 | File Type | Recommended Guide | Key Features |
 |-----------|-------------------|--------------|
-| 📄 PDF Documents | [Rename PDFs by Title](rename-pdf-by-title.md) | Content recognition + OCR |
-| 📸 Photos | *Coming soon* | EXIF data extraction |
-| 📝 Office Docs | *Coming soon* | Document property recognition |
+| 📄 PDF Documents | [Rename PDFs by Title](rename-pdf-by-title.md) / [Scanned PDFs](rename-scanned-pdfs-automatically.md) | Content recognition + OCR |
+| 📸 Photos | [Batch Rename Photos by EXIF](batch-rename-photos-by-exif.md) | EXIF data extraction |
+| 📝 Office Docs | [Rename Files by Content](rename-files-by-content.md) | Document property recognition |
 | 🎵 Audio Files | *Coming soon* | Metadata extraction |
-| 🎬 Video Files | *Coming soon* | Media info recognition |
+| 🎬 Video Files | [Rename Files by Content](rename-files-by-content.md) | Media info recognition |
 
 ---
 
