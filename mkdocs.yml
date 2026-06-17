@@ -124,10 +124,29 @@ extra:
 
 # 排除文件（不发布）
 exclude_docs: |
+  # 内部文档
   README_NEW_STRUCTURE.md
   SEO_CONTENT_PLAN.md
   assets/README_SCREENSHOTS.md
   .templates/
+  
+  # Thin content 页面（内容不足300字的占位页）
+  file-types/images/index.md
+  file-types/documents/index.md
+  file-types/audio/index.md
+  file-types/video/index.md
+  use-cases/downloads/index.md
+  use-cases/business/index.md
+  use-cases/media/index.md
+  
+  # 英文版对应页面
+  en/file-types/images/index.md
+  en/file-types/documents/index.md
+  en/file-types/audio/index.md
+  en/file-types/video/index.md
+  en/use-cases/downloads/index.md
+  en/use-cases/business/index.md
+  en/use-cases/media/index.md
 
 # 插件
 plugins:
