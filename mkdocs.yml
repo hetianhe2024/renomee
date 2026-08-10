@@ -117,8 +117,6 @@ extra:
   analytics:
     provider: google
     property: G-XXXXXXXXXX  # 替换为您的 Google Analytics ID
-  version:
-    provider: mike
   # SEO 优化
   generator: false  # 移除 MkDocs 生成器标签
 
