@@ -646,6 +646,10 @@ Continue learning about intelligent file organization:
 - 🔍 [Organize Scanned PDFs Automatically](../../use-cases/business/organize-scanned-pdfs.md) — OCR workflow
 - 🗣️ [Natural Language File Renaming](./natural-language-rename.md) — No regex required
 
+**Related pages on Renomee**:
+
+- 📋 [Rename PDF Files Based on Content](https://renomeeai.com/en/rename-files/pdf/rename-pdf-based-on-content/) — 4 free methods compared, including AI-powered renaming
+
 ---
 
 **Sources & Further Reading**:

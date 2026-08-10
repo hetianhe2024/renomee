@@ -271,3 +271,7 @@ Batch renaming photos by EXIF data transforms chaotic image collections into org
 - [How to Rename Files by Content](./rename-files-by-content.md)
 - [How to Rename Scanned PDFs Automatically](./rename-scanned-pdfs-automatically.md)
 - [How to Rename PDF Files by Title](./rename-pdf-by-title.md)
+
+**Related pages on Renomee**:
+
+- 📷 [Photo Batch Rename Complete Guide](https://renomeeai.com/en/rename-files/photo/) — EXIF, GPS, camera model, and more naming options

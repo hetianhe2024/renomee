@@ -552,6 +552,13 @@ Continue learning about smart document management:
 - 📄 [How to Rename Files by Content](./rename-files-by-content.md) — Complete content-based renaming guide
 - 📋 [Rename PDF Files by Title](./rename-pdf-by-title.md) — PDF-specific techniques
 - 🗂️ [Natural Language File Renaming](./natural-language-rename.md) — No regex required
+
+**Scene-specific guides on Renomee**:
+
+- ⚖️ [Rename Contract PDFs](https://renomeeai.com/en/rename-files/pdf/rename-contract-pdf/) — NDA, MSA, SOW by client name and date
+- 🏦 [Rename Bank Statement PDFs](https://renomeeai.com/en/rename-files/pdf/rename-bank-statement-pdf/) — Organize statements from multiple banks
+- 🧾 [Rename Receipt PDFs](https://renomeeai.com/en/rename-files/pdf/rename-receipt-pdf/) — Auto-name by store, date, and amount
+- 🏥 [Rename Medical PDFs](https://renomeeai.com/en/rename-files/pdf/rename-medical-pdf/) — Patient records and lab reports, fully offline
 - 📊 [Batch Process Business Documents](../../use-cases/business/batch-process-documents.md) — Workflow optimization
 
 ---

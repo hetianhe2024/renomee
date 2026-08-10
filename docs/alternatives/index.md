@@ -266,6 +266,12 @@ A: 当然。很多用户会：
 - **Advanced Renamer 比较** - Mac 用户视角
 - **Adobe Acrobat vs Renomee** - PDF 处理专题
 
+### Renomee 官网：各工具深度对比页
+
+- 🪟 [Bulk Rename Utility 替代方案](https://renomeeai.com/rename-files/windows/bulk-rename-utility-alternative/) — BRU 与 Renomee 功能逐项对比
+- ⚡ [PowerRename 替代方案](https://renomeeai.com/rename-files/windows/powerrename-alternative/) — 正则 vs AI：哪个更省时？
+- 🔧 [Advanced Renamer 替代方案](https://renomeeai.com/rename-files/windows/advanced-renamer-alternative/) — 脚本复杂度 vs 一键 AI 对比
+
 ---
 
 ## 💬 用户真实反馈

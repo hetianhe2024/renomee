@@ -554,6 +554,13 @@ Renomee 智能处理多页文档:
 - 🗂️ [用自然语言重命名文件](./natural-language-rename.md) — 无需正则表达式
 - 📊 [批量处理商业文档](../../use-cases/business/batch-process-documents.md) — 工作流优化
 
+**按场景的专项指南（Renomee 官网）**：
+
+- ⚖️ [合同 PDF 批量重命名](https://renomeeai.com/rename-files/pdf/rename-contract-pdf/) — NDA、MSA、SOW 按客户和日期命名
+- 🏦 [银行对账单 PDF 重命名](https://renomeeai.com/rename-files/pdf/rename-bank-statement-pdf/) — 多家银行对账单统一归档
+- 🧾 [收据 PDF 批量重命名](https://renomeeai.com/rename-files/pdf/rename-receipt-pdf/) — 按商家、日期和金额自动命名
+- 🏥 [医疗 PDF 批量重命名](https://renomeeai.com/rename-files/pdf/rename-medical-pdf/) — 病历、检验报告离线整理
+
 ---
 
 **参考资料与延伸阅读**:

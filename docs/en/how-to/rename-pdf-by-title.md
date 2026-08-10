@@ -364,6 +364,11 @@ Continue organizing your digital files:
 - ⚡ [Advanced Renaming Features](../../guide/advanced-features.md)
 - ❓ [Frequently Asked Questions](../../faq.md)
 
+**Related pages on Renomee**:
+
+- 📂 [PDF Rename Complete Guide](https://renomeeai.com/en/rename-files/pdf/) — All PDF rename scenarios in one place
+- 🔍 [Extract PDF Metadata & Rename](https://renomeeai.com/en/rename-files/pdf/extract-pdf-metadata/) — Batch organize PDFs using embedded metadata
+
 ---
 
 **Sources**:

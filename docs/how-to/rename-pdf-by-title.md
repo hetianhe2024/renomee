@@ -364,6 +364,11 @@ Renomee 对标准格式的 PDF 达到 95%+ 的准确率。对于来自主要出�
 - ⚡ [高级重命名功能](../../guide/advanced-features.md)
 - ❓ [常见问题解答](../../faq.md)
 
+**Renomee 官网相关页面**：
+
+- 📂 [PDF 重命名完整指南](https://renomeeai.com/rename-files/pdf/) — 所有 PDF 场景一站式汇总
+- 🔍 [提取 PDF 元数据并重命名](https://renomeeai.com/rename-files/pdf/extract-pdf-metadata/) — 利用元数据批量整理 PDF
+
 ---
 
 **参考来源**：

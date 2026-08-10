@@ -82,6 +82,14 @@ When choosing a file renaming tool, understanding the pros and cons of different
 
 ---
 
+## 📚 Related Deep Dives on Renomee
+
+- 🪟 [Bulk Rename Utility Alternative](https://renomeeai.com/en/rename-files/windows/bulk-rename-utility-alternative/) — Feature-by-feature comparison with BRU
+- ⚡ [PowerRename Alternative](https://renomeeai.com/en/rename-files/windows/powerrename-alternative/) — Regex vs AI: which saves more time?
+- 🔧 [Advanced Renamer Alternative](https://renomeeai.com/en/rename-files/windows/advanced-renamer-alternative/) — Script complexity vs one-click AI renaming
+
+---
+
 ## 🚀 Get Started
 
 → [Try Renomee AI for Free](https://renomeeai.com/en/product/download/)  

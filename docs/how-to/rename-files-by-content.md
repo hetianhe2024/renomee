@@ -646,6 +646,10 @@ Renomee 会回退到:
 - 🔍 [自动整理扫描版 PDF 文档](../../use-cases/business/organize-scanned-pdfs.md) — OCR 工作流
 - 🗣️ [用自然语言重命名文件](./natural-language-rename.md) — 无需正则表达式
 
+**Renomee 官网相关页面**：
+
+- 📋 [根据内容重命名 PDF 文件](https://renomeeai.com/rename-files/pdf/rename-pdf-based-on-content/) — 4 种免费方法对比，含 AI 方案
+
 ---
 
 **参考资料与延伸阅读**:

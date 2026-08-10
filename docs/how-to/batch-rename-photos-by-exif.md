@@ -271,3 +271,7 @@ EXIF 数据存储在图像文件本身中。重命名时，只有**您**控制�
 - [如何根据内容重命名文件](./rename-files-by-content.md)
 - [如何自动重命名扫描的 PDF](./rename-scanned-pdfs-automatically.md)
 - [如何根据标题重命名 PDF 文件](./rename-pdf-by-title.md)
+
+**Renomee 官网相关页面**：
+
+- 📷 [照片批量重命名完整指南](https://renomeeai.com/rename-files/photo/) — EXIF、GPS、相机型号等多维度命名方案
