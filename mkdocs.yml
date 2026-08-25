@@ -82,6 +82,7 @@ nav:
   
   - 关于:
       - 更新日志: about/changelog.md
+      - 相关讨论: about/related-threads.md
       - 隐私政策: about/privacy.md
 
 # Markdown 扩展
@@ -182,6 +183,7 @@ plugins:
             常见问题: 常见问题
             关于: 关于
             更新日志: 更新日志
+            相关讨论: 相关讨论
             隐私政策: 隐私政策
         - locale: en
           name: English
@@ -214,5 +216,6 @@ plugins:
             常见问题: FAQ
             关于: About
             更新日志: Changelog
+            相关讨论: Related discussions
             隐私政策: Privacy Policy
   - search
