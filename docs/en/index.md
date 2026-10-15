@@ -1,13 +1,15 @@
 ---
 title: Renomee AI - Intelligent File Renaming Tool
-description: Renomee AI is a revolutionary file renaming tool powered by AI. It features smart recognition, natural language rules, and batch processing to make file management simple and efficient. Available for Windows and macOS.
+description: Renomee AI is a batch file renaming tool for Windows and macOS that uses AI and OCR to rename files based on their actual content, using plain-language rules instead of regex.
 ---
 
 # Renomee AI - Smart File Renaming
 
 ![Renomee Logo](https://renomeeai.com//static/media/logo.png)
 
-Welcome to **Renomee AI**, the revolutionary tool that simplifies file management through intelligent automation.
+**Renomee AI is a batch file renaming tool for Windows and macOS that uses AI and OCR to rename files based on their actual content, using plain-language rules instead of regex.**
+
+No complex expressions, no scripting. Just describe what you want — Renomee reads the file, extracts what matters (title, date, vendor, author), and renames it in seconds. Supports Windows 10+ and macOS 10.15+, processes up to 50 MB files, runs 100% locally.
 
 ## 🎯 Why Renomee?
 

@@ -57,6 +57,15 @@ nav:
       - 根据内容智能重命名: how-to/rename-files-by-content.md
       - 自动重命名扫描版 PDF: how-to/rename-scanned-pdfs-automatically.md
       - 按 EXIF 批量重命名照片: how-to/batch-rename-photos-by-exif.md
+
+  - 场景食谱:
+      - recipes/index.md
+      - 扫描 PDF 按内容重命名 (OCR): recipes/rename-scanned-pdfs-by-content.md
+      - 发票 PDF 按供应商和日期重命名: recipes/rename-invoices-by-vendor-date.md
+      - 合同 PDF 按甲乙方和日期重命名: recipes/rename-contracts-by-party-date.md
+      - 学术论文按标题和作者重命名: recipes/rename-research-papers-by-title-author.md
+      - 照片按 EXIF 日期批量重命名: recipes/rename-photos-by-exif-date.md
+      - MP3 按 ID3 标签重命名: recipes/rename-mp3-by-id3-tag.md
   
   - 文件类型:
       - file-types/index.md
@@ -201,6 +210,13 @@ plugins:
             根据内容智能重命名: Rename Files by Content
             自动重命名扫描版 PDF: Rename Scanned PDFs Automatically
             按 EXIF 批量重命名照片: Batch Rename Photos by EXIF
+            场景食谱: Recipes
+            扫描 PDF 按内容重命名 (OCR): Rename Scanned PDFs by Content (OCR)
+            发票 PDF 按供应商和日期重命名: Rename Invoices by Vendor & Date
+            合同 PDF 按甲乙方和日期重命名: Rename Contracts by Party & Date
+            学术论文按标题和作者重命名: Rename Research Papers by Title & Author
+            照片按 EXIF 日期批量重命名: Batch Rename Photos by EXIF Date
+            MP3 按 ID3 标签重命名: Rename MP3s by ID3 Tag
             文件类型: File Types
             PDF 文件: PDF Files
             图片照片: Images & Photos
