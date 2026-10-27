@@ -1,6 +1,6 @@
 ---
 title: 相关讨论 - Renomee 公开帖文与外部资源
-description: 收录与 Renomee 相关的公开讨论和外部资源，包括 Thread Reader 展开页、Telegram、Internet Archive、Zenodo、Tumblr 与 DEV Community。
+description: 收录与 Renomee 相关的公开讨论和外部资源，包括 Thread Reader、Telegram、存档、目录站、Tumblr、DEV Community 与 Velog。
 ---
 
 # 相关讨论
@@ -47,7 +47,7 @@ Windows 上简单改名，用资源管理器就够。规则更复杂时，可以
 
 ## Telegram
 
-频道：[Renomee AI](https://t.me/renomeeai)
+频道：[Renomee AI](https://t.me/renomeeai)。不打开客户端时，可以用公开网页预览阅读：[Telegram 频道预览](https://t.me/s/renomeeai)。
 
 ### Introducing Renomee AI
 
@@ -105,6 +105,64 @@ Windows 上简单改名，用资源管理器就够。规则更复杂时，可以
 
 ## DEV Community
 
+### Why File Renaming Is Still a Hard Problem
+
 说明文件重命名难在内容不在文件名里：PDF 标题、EXIF、合同正文都要先提取，再用自然语言规则生成新文件名，并在执行前预览。
 
 [DEV：Why File Renaming Is Still a Hard Problem (And How AI Changes It)](https://dev.to/hetianhe/why-file-renaming-is-still-a-hard-problem-and-how-ai-changes-it-57n8)
+
+### FastAPI + Electron，以及为什么不用 Tauri
+
+讲桌面端为什么拆成 Electron 界面和本地 FastAPI：文件在本机读取，后端做 OCR、EXIF 和命名；并比较 Tauri、PyQt 与纯 Electron 的取舍。
+
+[DEV：How I Built an AI File Renamer with FastAPI + Electron (and Why Not Tauri)](https://dev.to/hetianhe/how-i-built-an-ai-file-renamer-with-fastapi-electron-and-why-not-tauri-23gl)
+
+## Velog
+
+韩文帖。题目是用 EXIF 元数据一次整理大量照片，并说明为什么做 Renomee AI。
+
+[Velog：수천 장의 사진 EXIF 메타데이터로 한 번에 정리하기](https://velog.io/@hetianhe2024/%EC%88%98%EC%B2%9C-%EC%9E%A5%EC%9D%98-%EC%82%AC%EC%A7%84-EXIF-%EB%A9%94%ED%83%80%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%ED%95%9C-%EB%B2%88%EC%97%90-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0-Renomee-AI%EB%A5%BC-%EB%A7%8C%EB%93%A0-%EC%9D%B4%EC%9C%A0)
+
+## 产品发布与目录
+
+### Fazier
+
+产品发布页。介绍按文件内容批量重命名、OCR、EXIF、音频元数据和自然语言命名规则，页内有读者留言。
+
+[Fazier：Renomee AI](https://fazier.com/launches/renomee-ai)
+
+### AI Finder Guru
+
+工具目录中的 Renomee AI 条目，概述 PDF 文本、扫描件 OCR、照片 EXIF 和自然语言命名规则。
+
+[AI Finder Guru：Renomee AI](https://aifinderguru.com/ai-tool/renomee-ai/)
+
+### LibHunt
+
+Python 包 `renomee-ai-pyp` 的项目页，并列出 file-brain、Bulk Rename Utility 等相近项目。
+
+[LibHunt：Renomee AI](https://www.libhunt.com/r/renomee-ai-pyp)
+
+### Peerlist
+
+项目主页。说明按 PDF 正文、照片 EXIF 和音频 ID3 生成文件名，用自然语言描述规则，并在本机完成读取和重命名。
+
+[Peerlist：RenomeeAI](https://peerlist.io/hetianhe2012/project/renomeeai-ai-batch-rename-by-content)
+
+### BizMenia
+
+企业资料页，位于北京。简介覆盖 PDF、图片、文档和媒体的批量重命名，以及 OCR 与自然语言规则。
+
+[BizMenia：Renomee AI](https://bizmenia.com/b/renomee-ai)
+
+### Magic.ly
+
+开发者的链接主页，简介中写明正在做 Renomee AI。
+
+[Magic.ly：tianhe he](https://magicly.bio/tianhe)
+
+## 检索记录
+
+Yandex 上「RenomeeAI vs Bulk Rename Utility」的检索结果页。
+
+[Yandex：RenomeeAI vs Bulk Rename Utility](https://online.yandex.com/search?text=RenomeeAI+vs+Bulk+Rename+Utility&lr=21206)
