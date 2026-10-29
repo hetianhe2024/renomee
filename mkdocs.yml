@@ -13,10 +13,10 @@ theme:
   name: material
   custom_dir: docs/.overrides
   palette:
-    # 浅色模式
+    # 浅色模式 — 白色顶栏，参考 Base44 风格
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: blue
+      primary: white
       accent: blue
       toggle:
         icon: material/brightness-7
@@ -24,86 +24,87 @@ theme:
     # 深色模式
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue
+      primary: grey
       accent: blue
       toggle:
         icon: material/brightness-4
         name: 切换到浅色模式
   features:
-    - navigation.instant      # 即时加载
-    - navigation.tracking     # 跟踪锚点
-    - navigation.tabs         # 顶部导航 Tab（4 个内容域）
-    - navigation.sections     # 侧边栏分组标题
-    - navigation.indexes      # 分组首页支持
-    - navigation.top          # 返回顶部按钮
-    - search.suggest          # 搜索建议
-    - search.highlight        # 搜索高亮
-    - content.code.copy       # 代码复制按钮
+    - navigation.instant        # 即时加载
+    - navigation.tracking       # 跟踪锚点
+    - navigation.tabs           # 顶部 Tab 栏
+    - navigation.tabs.sticky    # 双层导航始终固定，不随滚动隐藏
+    - navigation.sections       # 侧边栏分组标题
+    - navigation.indexes        # 分组支持 index 页
+    - navigation.top            # 返回顶部按钮
+    - search.suggest            # 搜索建议
+    - search.highlight          # 搜索高亮
+    - content.code.copy         # 代码复制按钮
   icon:
     repo: fontawesome/brands/github
 
+# 自定义样式
+extra_css:
+  - stylesheets/extra.css
+
 # 导航结构
-# 顶部 4 个 Tab 对应 4 个内容域，侧边栏在各自 Tab 内按任务分组
+# 顶部 3 个 Tab，侧边栏按用户任务分组（不暴露 Guide/How-to/Recipe 概念）
 nav:
 
-  # Tab 1：学习 —— 新用户入门 + 核心功能说明
-  - 学习:
-      - 快速入门:
+  # ── Tab 1：使用指南 ── 所有"学"与"做"的内容
+  - 使用指南:
+      - 开始使用:
           - 产品简介: index.md
-          - 安装说明: guide/installation.md
+          - 安装 Renomee: guide/installation.md
           - 快速上手: quickstart.md
-      - 使用指南:
           - 基础操作: guide/basic-usage.md
-          - AI 模式与高级功能: guide/advanced-features.md
-
-  # Tab 2：教程 —— 按任务场景分组，内容可持续扩充
-  - 教程:
-      - how-to/index.md
+          - AI 识别与 OCR 能力: guide/advanced-features.md
       - PDF 与文档:
           - 根据标题重命名 PDF: how-to/rename-pdf-by-title.md
-          - 按内容智能重命名文件: how-to/rename-files-by-content.md
-          - 扫描版 PDF 自动重命名: how-to/rename-scanned-pdfs-automatically.md
-          - 扫描 PDF 按内容重命名（OCR）: recipes/rename-scanned-pdfs-by-content.md
-      - 办公与财务:
-          - 发票按供应商和日期重命名: recipes/rename-invoices-by-vendor-date.md
-          - 合同按甲乙方和日期重命名: recipes/rename-contracts-by-party-date.md
-          - 学术论文按标题和作者重命名: recipes/rename-research-papers-by-title-author.md
-      - 照片与媒体:
-          - 按 EXIF 批量重命名照片: how-to/batch-rename-photos-by-exif.md
-          - 照片按 EXIF 日期批量重命名: recipes/rename-photos-by-exif-date.md
-          - MP3 按 ID3 标签重命名: recipes/rename-mp3-by-id3-tag.md
+          - 自动重命名扫描版 PDF: how-to/rename-scanned-pdfs-automatically.md
+          - 根据内容重命名文件: how-to/rename-files-by-content.md
+          - 扫描 PDF 按内容命名（OCR）: recipes/rename-scanned-pdfs-by-content.md
+          - 发票按供应商和日期命名: recipes/rename-invoices-by-vendor-date.md
+          - 合同按甲乙方和日期命名: recipes/rename-contracts-by-party-date.md
+          - 论文按标题和作者命名: recipes/rename-research-papers-by-title-author.md
+      - 照片与图片:
+          - 照片按 EXIF 批量重命名: how-to/batch-rename-photos-by-exif.md
+          - EXIF 日期完整操作步骤: recipes/rename-photos-by-exif-date.md
+      - 音频:
+          - MP3 按 ID3 标签命名: recipes/rename-mp3-by-id3-tag.md
 
-  # Tab 3：参考 —— 查规格、查对比，内容扩充时按文件类型加页面
-  - 参考:
-      - 支持的文件类型:
+  # ── Tab 2：参考资料 ── 纯查阅：格式规格、限制、安全、工具对比
+  - 参考资料:
+      - 支持的格式:
+          - 格式与能力总览: file-types/index.md
           - PDF 文件: file-types/pdf/index.md
+      - 隐私与数据安全: about/privacy.md
       - 工具对比: alternatives/index.md
 
-  # Tab 4：帮助 —— 固定入口，不随内容扩充而增长
+  # ── Tab 3：帮助 ── 固定入口，不随内容扩充增长
   - 帮助:
       - 常见问题: faq.md
-      - 隐私与数据安全: about/privacy.md
       - 更新日志: about/changelog.md
       - 相关讨论: about/related-threads.md
 
 # Markdown 扩展
 markdown_extensions:
-  - admonition                # 提示框
-  - pymdownx.details          # 可折叠提示框
-  - pymdownx.superfences      # 代码块增强
-  - pymdownx.highlight:       # 代码高亮
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.inlinehilite     # 行内代码高亮
-  - pymdownx.snippets         # 代码片段
-  - pymdownx.tabbed:          # 标签页
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
       alternate_style: true
-  - tables                    # 表格支持
-  - toc:                      # 目录
+  - tables
+  - toc:
       permalink: true
       title: 目录
-  - attr_list                 # 属性列表
-  - md_in_html                # HTML 中的 Markdown
-  - pymdownx.emoji:           # Emoji 支持
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
@@ -119,8 +120,7 @@ extra:
   analytics:
     provider: google
     property: G-XXXXXXXXXX  # 替换为您的 Google Analytics ID
-  # SEO 优化
-  generator: false  # 移除 MkDocs 生成器标签
+  generator: false
 
 # 排除文件（不发布）
 exclude_docs: |
@@ -129,24 +129,34 @@ exclude_docs: |
   SEO_CONTENT_PLAN.md
   assets/README_SCREENSHOTS.md
   .templates/
-  
-  # Thin content 页面（内容不足300字的占位页）
+
+  # 不在导航中的 index 汇总页（由新导航结构取代）
+  how-to/index.md
+  recipes/index.md
+  en/how-to/index.md
+  en/recipes/index.md
+
+  # 整个 use-cases 目录（已从导航移除）
+  use-cases/index.md
+  use-cases/research/index.md
+  use-cases/downloads/index.md
+  use-cases/business/index.md
+  use-cases/media/index.md
+  en/use-cases/index.md
+  en/use-cases/research/index.md
+  en/use-cases/downloads/index.md
+  en/use-cases/business/index.md
+  en/use-cases/media/index.md
+
+  # Thin content 占位页（内容不足，尚未完成）
   file-types/images/index.md
   file-types/documents/index.md
   file-types/audio/index.md
   file-types/video/index.md
-  use-cases/downloads/index.md
-  use-cases/business/index.md
-  use-cases/media/index.md
-  
-  # 英文版对应页面
   en/file-types/images/index.md
   en/file-types/documents/index.md
   en/file-types/audio/index.md
   en/file-types/video/index.md
-  en/use-cases/downloads/index.md
-  en/use-cases/business/index.md
-  en/use-cases/media/index.md
 
 # 插件
 plugins:
@@ -162,35 +172,34 @@ plugins:
           build: true
           site_name: Renomee AI 文档
           nav_translations:
-            学习: 学习
-            快速入门: 快速入门
-            产品简介: 产品简介
-            安装说明: 安装说明
-            快速上手: 快速上手
             使用指南: 使用指南
+            开始使用: 开始使用
+            产品简介: 产品简介
+            安装 Renomee: 安装 Renomee
+            快速上手: 快速上手
             基础操作: 基础操作
-            AI 模式与高级功能: AI 模式与高级功能
-            教程: 教程
+            AI 识别与 OCR 能力: AI 识别与 OCR 能力
             PDF 与文档: PDF 与文档
             根据标题重命名 PDF: 根据标题重命名 PDF
-            按内容智能重命名文件: 按内容智能重命名文件
-            扫描版 PDF 自动重命名: 扫描版 PDF 自动重命名
-            扫描 PDF 按内容重命名（OCR）: 扫描 PDF 按内容重命名（OCR）
-            办公与财务: 办公与财务
-            发票按供应商和日期重命名: 发票按供应商和日期重命名
-            合同按甲乙方和日期重命名: 合同按甲乙方和日期重命名
-            学术论文按标题和作者重命名: 学术论文按标题和作者重命名
-            照片与媒体: 照片与媒体
-            按 EXIF 批量重命名照片: 按 EXIF 批量重命名照片
-            照片按 EXIF 日期批量重命名: 照片按 EXIF 日期批量重命名
-            MP3 按 ID3 标签重命名: MP3 按 ID3 标签重命名
-            参考: 参考
-            支持的文件类型: 支持的文件类型
+            自动重命名扫描版 PDF: 自动重命名扫描版 PDF
+            根据内容重命名文件: 根据内容重命名文件
+            扫描 PDF 按内容命名（OCR）: 扫描 PDF 按内容命名（OCR）
+            发票按供应商和日期命名: 发票按供应商和日期命名
+            合同按甲乙方和日期命名: 合同按甲乙方和日期命名
+            论文按标题和作者命名: 论文按标题和作者命名
+            照片与图片: 照片与图片
+            照片按 EXIF 批量重命名: 照片按 EXIF 批量重命名
+            EXIF 日期完整操作步骤: EXIF 日期完整操作步骤
+            音频: 音频
+            MP3 按 ID3 标签命名: MP3 按 ID3 标签命名
+            参考资料: 参考资料
+            支持的格式: 支持的格式
+            格式与能力总览: 格式与能力总览
             PDF 文件: PDF 文件
+            隐私与数据安全: 隐私与数据安全
             工具对比: 工具对比
             帮助: 帮助
             常见问题: 常见问题
-            隐私与数据安全: 隐私与数据安全
             更新日志: 更新日志
             相关讨论: 相关讨论
         - locale: en
@@ -198,35 +207,34 @@ plugins:
           build: true
           site_name: Renomee AI Documentation
           nav_translations:
-            学习: Learn
-            快速入门: Get Started
+            使用指南: Guides
+            开始使用: Get Started
             产品简介: Overview
-            安装说明: Installation
+            安装 Renomee: Installation
             快速上手: Quick Start
-            使用指南: User Guide
             基础操作: Basic Operations
-            AI 模式与高级功能: AI Mode & Advanced Features
-            教程: Tutorials
+            AI 识别与 OCR 能力: AI Recognition & OCR
             PDF 与文档: PDFs & Documents
             根据标题重命名 PDF: Rename PDFs by Title
-            按内容智能重命名文件: Rename Files by Content
-            扫描版 PDF 自动重命名: Rename Scanned PDFs Automatically
-            扫描 PDF 按内容重命名（OCR）: Rename Scanned PDFs by Content (OCR)
-            办公与财务: Office & Finance
-            发票按供应商和日期重命名: Rename Invoices by Vendor & Date
-            合同按甲乙方和日期重命名: Rename Contracts by Party & Date
-            学术论文按标题和作者重命名: Rename Research Papers by Title & Author
-            照片与媒体: Photos & Media
-            按 EXIF 批量重命名照片: Batch Rename Photos by EXIF
-            照片按 EXIF 日期批量重命名: Batch Rename Photos by EXIF Date
-            MP3 按 ID3 标签重命名: Rename MP3s by ID3 Tag
-            参考: Reference
-            支持的文件类型: Supported File Types
+            自动重命名扫描版 PDF: Rename Scanned PDFs Automatically
+            根据内容重命名文件: Rename Files by Content
+            扫描 PDF 按内容命名（OCR）: Rename Scanned PDFs by Content (OCR)
+            发票按供应商和日期命名: Rename Invoices by Vendor & Date
+            合同按甲乙方和日期命名: Rename Contracts by Party & Date
+            论文按标题和作者命名: Rename Research Papers by Title & Author
+            照片与图片: Photos & Images
+            照片按 EXIF 批量重命名: Batch Rename Photos by EXIF
+            EXIF 日期完整操作步骤: EXIF Date — Full Steps
+            音频: Audio
+            MP3 按 ID3 标签命名: Rename MP3s by ID3 Tag
+            参考资料: Reference
+            支持的格式: Supported Formats
+            格式与能力总览: Format & Capability Overview
             PDF 文件: PDF Files
+            隐私与数据安全: Privacy & Data Security
             工具对比: Alternatives
             帮助: Help
             常见问题: FAQ
-            隐私与数据安全: Privacy & Data Security
             更新日志: Changelog
             相关讨论: Related Discussions
   - search
