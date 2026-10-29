@@ -236,21 +236,21 @@ Renomee 使用以下第三方服务：
 
 您有权了解我们收集了哪些数据：
 
-- 📧 发送请求到 privacy@xiaojingjia.top
+- 📧 发送请求到 support@renomeeai.com
 - 我们会在 30 天内回复
 
 ### 2. 更正权
 
 如果数据不准确，您可以要求更正：
 
-- 联系 support@xiaojingjia.top
+- 联系 support@renomeeai.com
 
 ### 3. 删除权
 
 您可以要求删除您的数据：
 
 - 卸载应用自动删除本地数据
-- 要求删除服务器端数据：privacy@xiaojingjia.top
+- 要求删除服务器端数据：support@renomeeai.com
 
 ### 4. 撤回同意
 
@@ -268,7 +268,7 @@ Renomee 使用以下第三方服务：
 
 您可以反对特定的数据处理：
 
-- 联系 privacy@xiaojingjia.top 说明您的诉求
+- 联系 support@renomeeai.com 说明您的诉求
 
 ## 👶 儿童隐私
 
@@ -276,7 +276,7 @@ Renomee 不面向 13 岁以下儿童。
 
 如果我们发现无意中收集了儿童信息，会立即删除。
 
-如果您认为我们收集了儿童信息，请联系 privacy@xiaojingjia.top。
+如果您认为我们收集了儿童信息，请联系 support@renomeeai.com。
 
 ## 🌍 国际数据传输
 
@@ -311,7 +311,7 @@ Renomee 服务器位于多个地区：
 如果您对隐私政策有任何疑问：
 
 **📧 隐私专用邮箱：**
-privacy@xiaojingjia.top
+support@renomeeai.com
 
 **📬 邮寄地址：**
 [公司地址]

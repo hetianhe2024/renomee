@@ -73,7 +73,7 @@ We use `Major.Minor.Patch` format:
 
 ## Feedback
 Have a suggestion or found a bug?
-- 📧 Email: support@xiaojingjia.top
+- 📧 Email: support@renomeeai.com
 - 🐛 [GitHub Issues](https://github.com/hetianhe2024/renomee/issues)
 - 📝 [Renomee AI Blog](https://renomeeai.com/en/blog/) - Product updates and tips
 

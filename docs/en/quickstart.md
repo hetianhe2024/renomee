@@ -82,7 +82,7 @@ Enable **AI Mode** to let Renomee analyze file content:
 ## ❓ Need Help?
 - Check the [FAQ](faq.md).
 - Visit [GitHub Issues](https://github.com/hetianhe2024/renomee/issues).
-- Email us: support@xiaojingjia.top
+- Email us: support@renomeeai.com
 
 ---
 

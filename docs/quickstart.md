@@ -171,7 +171,7 @@ Renomee 支持强大的变量系统：
 
 1. 查看 [常见问题](faq.md)
 2. 访问 [GitHub Issues](https://github.com/hetianhe2024/renomee/issues)
-3. 发送邮件至：support@xiaojingjia.top
+3. 发送邮件至：support@renomeeai.com
 
 ## 📚 下一步
 

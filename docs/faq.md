@@ -59,7 +59,7 @@ description: Renomee AI 常见问题解答，涵盖安装与更新、功能使�
    - macOS: `~/Library/Application Support/Renomee/logs/`
 3. **尝试重新安装** - 先完全卸载，再重新安装
 4. **关闭杀毒软件** - 某些杀毒软件可能误报
-5. **联系支持** - 发送日志文件到 support@xiaojingjia.top
+5. **联系支持** - 发送日志文件到 support@renomeeai.com
 
 ## 🔧 功能使用
 
@@ -339,7 +339,7 @@ renomee --rule "{date}_{n3}{ext}" --path "/photos"
    - 访问 [Renomee AI 定价方案](https://renomeeai.com/product/pricing/)
 
 3. **授权码购买**
-   - 联系 sales@xiaojingjia.top
+   - 联系 support@renomeeai.com
 
 **支持的支付方式：**
 - 💳 信用卡（Visa / MasterCard / AmEx）
@@ -374,7 +374,7 @@ renomee --rule "{date}_{n3}{ext}" --path "/photos"
 
 1. 购买后 30 天内
 2. 使用时间少于 7 天
-3. 发送退款申请到 support@xiaojingjia.top
+3. 发送退款申请到 support@renomeeai.com
 
 **退款方式：**
 - 原路退回支付账户
@@ -387,7 +387,7 @@ renomee --rule "{date}_{n3}{ext}" --path "/photos"
 **A:** 多种联系方式：
 
 **📧 邮件支持：**
-- support@xiaojingjia.top
+- support@renomeeai.com
 - 工作日 24 小时内回复
 
 **💬 社区论坛：**
@@ -460,7 +460,7 @@ renomee --rule "{date}_{n3}{ext}" --path "/photos"
 
 如果您的问题没有在这里找到答案，请：
 
-1. 📧 发送邮件到 support@xiaojingjia.top
+1. 📧 发送邮件到 support@renomeeai.com
 2. 💬 访问 [社区论坛](https://github.com/hetianhe2024/renomee/discussions)
 3. 🐛 提交 [GitHub Issue](https://github.com/hetianhe2024/renomee/issues)
 

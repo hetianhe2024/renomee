@@ -278,7 +278,7 @@ description: Renomee AI 完整的版本更新日志，记录每个版本的新�
 
 如果您有任何功能建议或发现 Bug，请：
 
-- 📧 发送邮件到 support@xiaojingjia.top
+- 📧 发送邮件到 support@renomeeai.com
 - 🐛 提交 [GitHub Issue](https://github.com/hetianhe2024/renomee/issues)
 - 💬 参与 [社区讨论](https://github.com/hetianhe2024/renomee/discussions)
 

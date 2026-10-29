@@ -271,7 +271,7 @@ rm -rf ~/Library/Caches/Renomee
 
 ### 仍然无法解决？
 
-请访问 [GitHub Issues](https://github.com/hetianhe2024/renomee/issues) 提交问题，或发送邮件至 support@xiaojingjia.top。
+请访问 [GitHub Issues](https://github.com/hetianhe2024/renomee/issues) 提交问题，或发送邮件至 support@renomeeai.com。
 
 ## 📚 下一步
 
