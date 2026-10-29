@@ -8,6 +8,9 @@ keywords: rename files by content, content-aware file renaming, intelligent file
 
 > **Quick Navigation**: [Why Content-Based Naming Matters](#why-it-matters) → [How It Works](#how-it-works) → [Step-by-Step Guide](#step-by-step) → [File Types Supported](#file-types) → [FAQ](#faq)
 
+!!! abstract "Direct Answer"
+    **Content-based file renaming** is the process of automatically generating descriptive filenames by reading what's *inside* each file—extracting text from PDFs, EXIF metadata from photos, ID3 tags from audio, and titles from videos—rather than manipulating the existing filename with a pattern. You describe your naming requirement in plain language; [Renomee AI](https://renomeeai.com/en/) reads the file content, combines it with your instructions, and generates a meaningful name—turning `scan001.pdf` into `Invoice_ABC_Corp_2024-03-16.pdf`, or `IMG_8273.jpg` into `Grand_Canyon_Sunset_2024-03-15.jpg`. The process takes 5–10 minutes to set up and can rename 50–100 files per minute. Your files are never stored on servers; only the minimum necessary data is transmitted over TLS 1.3 and deleted immediately after processing.
+
 Traditional file renaming tools only look at filenames. Content-aware renaming is different—it reads what's inside your files and generates meaningful names based on actual content. This guide shows you how to implement intelligent file naming that transforms messy downloads into an organized, searchable library.
 
 !!! tip "The Difference"
@@ -452,9 +455,9 @@ Currently supported:
 
 See the [full list above](#file-types) for details on what gets extracted from each type.
 
-### Does content extraction work offline?
+### Does content-based file renaming require an internet connection?
 
-Partially. Basic operations (prefix/suffix, sequential numbering, reading photo EXIF data, reading audio ID3 tags) work fully offline. AI-powered content extraction — reading text from PDFs, OCR on scanned documents, and image understanding — requires a network connection. In those cases, only the minimum necessary data is sent: the first 3 pages of a document, or the image file itself (for Word/Excel, the text is extracted locally first). Your files are never stored on Renomee servers; all transmitted data is encrypted and deleted immediately after processing.
+Yes. Renomee AI reads your file content and your natural language naming instructions together via AI—this always requires a network connection. **Privacy protection**: only the minimum necessary data is transmitted—the first 3 pages of a document's text, or the image file itself (for Word/Excel, text is extracted locally before sending). Your original files are never uploaded or stored on Renomee servers; all transmitted data is encrypted with TLS 1.3 and deleted immediately after the filename is generated.
 
 ### How accurate is the content extraction?
 
@@ -613,6 +616,16 @@ Even with AI naming, periodic review helps:
 
 ---
 
+## Key Takeaways
+
+!!! success "Key Takeaways"
+    - **Content-based renaming reads file contents**; pattern-based tools only manipulate existing filenames
+    - **Supports 10+ file types**: PDF, JPEG, PNG, HEIC, MP4, MOV, MP3, DOCX, XLSX, PPTX
+    - **OCR enables scanned document support**: 90–95% accuracy on 300+ DPI scans
+    - **Processing speed**: 50–100 content-aware renames per minute (vs. 500–1,000+ for pattern-based)
+    - **Privacy-safe**: Files are never stored on servers; only the minimum necessary data is transmitted over TLS 1.3
+    - **Undo is built-in**: Every batch rename is logged and fully reversible
+
 ## Conclusion
 
 Content-based file renaming transforms how you organize digital files. Instead of meaningless patterns, you get descriptive names that reflect what's actually inside each file.
@@ -658,3 +671,68 @@ Continue learning about intelligent file organization:
 - "EXIF Metadata Standards", International Imaging Industry Association, 2025
 
 *Last updated: June 17, 2026*
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How is content-based file renaming different from pattern-based renaming?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pattern-based tools manipulate existing filenames using rules like 'replace X with Y' or 'add prefix ABC'—they never open the file. Content-based tools open each file, read its contents (text, EXIF data, ID3 tags, video metadata), and generate a descriptive filename based on what they find. For example, a scanned invoice named scan001.pdf becomes Invoice_ABC_Corp_2024-03-16_$1250.pdf after content extraction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What file types support content-based renaming?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Renomee AI supports content extraction from: PDF (title, author, dates), JPEG/PNG/HEIC images (EXIF metadata and OCR text), Microsoft Word/Excel/PowerPoint documents (title, headings, sheet names), MP4/MOV/AVI videos (title, date, resolution), and MP3/M4A/WAV audio files (ID3 tags: artist, song, album)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does content-based file renaming require an internet connection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. All Renomee AI renaming features require a network connection—the AI reads your file content and natural language naming instructions together to generate descriptive filenames. Privacy protection: only the minimum necessary data is transmitted. For documents, only the first 3 pages of text are sent; for Word/Excel files, text is extracted locally before transmission; image files themselves are sent for analysis. Original files are never uploaded or stored on Renomee servers. All data is encrypted with TLS 1.3 and deleted immediately after the filename is generated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate is content-based file renaming?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Accuracy by file type: well-formatted PDFs achieve 95%+ accuracy; photos with EXIF data reach 99%+ accuracy; OCR on clear scans (300+ DPI) is 90–95% accurate; OCR on poor-quality scans falls to 70–85%; and videos/audio with metadata achieve 98%+ accuracy. Always use the Preview mode before executing batch renames to catch any errors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast is content-based file renaming?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Content-based renaming speeds with Renomee AI: small files (images, PDFs under 5 MB) process at 50–100 files per minute; medium files (5–20 MB) at 20–40 files per minute; large files (20–50 MB) at 10–20 files per minute; files requiring OCR at 5–15 files per minute. By comparison, pattern-based renaming runs at 500–1,000+ files per minute since no file reading is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize what content gets extracted for filenames?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Renomee AI uses natural language rules, so you can specify exactly what to extract. Examples: 'Extract only the document title, ignore author'; 'For photos, use location and date but not camera model'; 'For PDFs, extract title and limit to first 50 characters'. No regex or coding is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to files with no extractable content?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When content cannot be extracted—due to corruption, encryption, or unsupported format—Renomee AI falls back to: (1) file creation/modification date, (2) original filename patterns, or (3) generic descriptive names like Document_001.pdf. These fallbacks are shown in the Preview so you can handle them manually before executing."
+      }
+    }
+  ]
+}
+</script>

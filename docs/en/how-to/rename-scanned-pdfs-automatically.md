@@ -8,6 +8,9 @@ keywords: rename scanned PDFs automatically, OCR PDF renaming, smart PDF filing,
 
 > **Quick Navigation**: [Why Renaming Matters](#why-it-matters) → [How OCR Renaming Works](#how-it-works) → [Step-by-Step Guide](#step-by-step) → [Use Cases](#use-cases) → [FAQs](#faqs)
 
+!!! abstract "Direct Answer"
+    **Automatic scanned PDF renaming** uses Optical Character Recognition (OCR) to read the text inside scanned image-based PDF files and then applies AI to extract key information—document type, vendor/party names, dates, and amounts—to generate a descriptive filename automatically. You describe what to extract in plain language; [Renomee AI](https://renomeeai.com) reads the scanned content, combines it with your instructions, and renames files without any manual typing—turning `scan001.pdf` into `Invoice_ABC_Corp_Mar_16_2024_$1250.pdf`. Supports 100+ languages with 98–99% accuracy on 300+ DPI scans. Setup takes 5–10 minutes; single-page PDFs process at 5–15 files per minute. Only the document's first 3 pages are transmitted for AI analysis; original files are never stored on servers.
+
 Scanned PDF files arrive with useless names like `scan001.pdf`, `document_20240315.pdf`, or `untitled.pdf`. These generic names force you to open every file just to see what's inside. This guide shows you how to **automatically rename scanned PDFs based on their actual content**—turning a folder full of mystery files into a searchable, organized document library.
 
 !!! tip "The Core Problem"
@@ -470,9 +473,9 @@ Accuracy depends on scan quality:
 
 Always preview results before executing batch renames.
 
-### Can OCR renaming work offline?
+### Does automatic scanned PDF renaming require an internet connection?
 
-Yes, with **Renomee AI**—all OCR processing happens locally on your computer. Your scanned documents never leave your device, ensuring complete privacy for sensitive business and personal files.
+Yes. **Renomee AI** requires a network connection to combine OCR-extracted text with your natural language naming instructions and generate descriptive filenames via AI. **Privacy protection**: only the first 3 pages of extracted text are transmitted—your original scanned files are never uploaded or stored on any server. All data is encrypted with TLS 1.3 and deleted immediately after the filename is generated, ensuring complete privacy for sensitive business and personal documents.
 
 ### Which languages does OCR support?
 
@@ -519,6 +522,16 @@ Yes, but reasonably fast. OCR must process image data, which takes more time tha
 The time investment is worth it—you get meaningful filenames instead of `scan001.pdf`.
 
 ---
+
+## Key Takeaways
+
+!!! success "Key Takeaways"
+    - **OCR accuracy**: 98–99% for high-quality scans (300+ DPI, clear text); 70–85% for low-quality or faded scans
+    - **Supports 100+ languages** including English, Chinese, Japanese, Arabic, and most European languages
+    - **Privacy-safe**: All OCR runs locally on your device; scanned documents are never uploaded to cloud servers
+    - **Processing speed**: 5–15 single-page PDFs per minute; 2–5 multi-page documents (10–20 pages) per minute
+    - **Time savings**: Typical document workers save 4–8 hours per month after switching to automated OCR renaming
+    - **Undo built-in**: Every batch rename is logged; revert to original names in one click
 
 ## Summary
 
@@ -569,3 +582,68 @@ Continue learning about smart document management:
 - "The Cost of Poor File Organization", McKinsey Productivity Institute, 2024
 
 *Last updated: June 17, 2026*
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between a scanned PDF and a regular PDF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A regular PDF contains actual selectable text created directly from software (Word, Excel, etc.) and can be searched or copied immediately. A scanned PDF is essentially a photo of a paper document—the text is just pixels in an image until OCR (Optical Character Recognition) converts it into machine-readable text. For automatic renaming purposes, scanned PDFs require OCR processing, while regular PDFs can be renamed directly from their existing text content."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate is OCR for automatically renaming scanned PDFs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "OCR accuracy for scanned PDF renaming depends on scan quality: high-quality scans at 300+ DPI with clear text achieve 98–99% accuracy; medium-quality scans at 200 DPI achieve 90–95% accuracy; low-quality scans below 200 DPI or with faded text fall to 70–85% accuracy; handwritten text achieves 70–90% accuracy. Always use the Preview function before executing batch renames to verify extraction quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are scanned documents uploaded to the cloud when renaming?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No—original scanned files are never uploaded or stored on any server. Renomee AI requires a network connection to process renaming requests, but only the minimum necessary data is transmitted: the first 3 pages of OCR-extracted text from your document. The original file stays on your device. All transmitted data is encrypted with TLS 1.3 and deleted immediately after the filename is generated. This makes Renomee AI safe for sensitive business invoices, medical records, legal contracts, and personal financial documents."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which languages does OCR support for scanned PDF renaming?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Renomee AI's OCR engine supports 100+ languages including English, Spanish, French, German, Italian, Chinese (Simplified and Traditional), Japanese, Korean, Arabic, Hebrew, Russian, and most European and Asian languages. Mixed-language documents are also supported."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I automatically rename scanned invoices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To automatically rename scanned invoices: (1) Open Renomee AI and select your invoices folder. (2) Enter the natural language rule: 'Extract vendor name, date, and invoice amount to rename'. (3) Click Preview to review the extracted data. (4) Click Execute to rename all files. Result example: scan023.pdf becomes Invoice_Amazon_Web_Services_Mar_15_2024_$850.pdf. This process typically saves 4–6 hours of manual renaming for a batch of 150 invoices."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast is automatic scanned PDF renaming?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Renomee AI processes scanned PDFs at: 5–15 single-page files per minute (high-quality scans process faster); 2–5 multi-page documents (10–20 pages) per minute. OCR is slower than regular text extraction because it must analyze image data, but the result is meaningful, searchable filenames instead of generic scan names."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I rename multi-page scanned PDFs automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Renomee AI handles multi-page scanned PDFs intelligently: it scans all pages for content, prioritizes information from the first page (which usually contains the title, header, or key identifiers), extracts consistent information repeated across pages (such as a header on every page), and supports documents up to 100+ pages."
+      }
+    }
+  ]
+}
+</script>

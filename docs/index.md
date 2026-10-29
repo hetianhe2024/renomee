@@ -5,7 +5,10 @@ description: Renomee AI 是一款革命性的智能文件重命名工具，支�
 
 # Renomee AI - 智能文件重命名工具
 
-![Renomee Logo](https://renomeeai.com//static/media/logo.png)
+![Renomee Logo](https://renomeeai.com/logo192.png)
+
+!!! abstract "Renomee AI 是什么？"
+    **Renomee AI** 是一款运行于 Windows 10+ 和 macOS 10.15+ 的智能文件重命名工具：用户用自然语言描述命名需求，AI 联网读取文件内容（PDF 文字、照片 EXIF 元数据、扫描件 OCR 文字、音视频标签），结合文件信息与用户要求自动生成描述性文件名，无需手动输入或学习正则表达式。例如：将 `scan001.pdf` 自动重命名为 `购销合同_甲方乙方_20240316.pdf`，将 `IMG_1234.jpg` 重命名为 `2024-06-15_上海外滩_日落_001.jpg`。免费版每天提供 **60 个文件**的 AI 处理额度。**隐私保护**：仅传输文件必要内容（文档前 3 页文本或图片本身），原始文件不上传服务器，传输数据经 TLS 1.3 加密并在处理完成后立即销毁。
 
 欢迎使用 **Renomee AI**，这是一款革命性的智能文件重命名工具，让文件管理变得简单高效！
 
@@ -106,7 +109,7 @@ Renomee 根据重命名规则决定向服务端发送哪些数据：
 **重要说明：**
 - 发送到服务端的数据在处理完成后**立即销毁**，不做保留。
 - 所有传输均经过加密（TLS 1.3）。
-- AI 内容分析功能**需要网络连接**。前缀/后缀修改、序号命名、读取照片 EXIF 日期等基础功能可完全离线使用。
+- **所有重命名功能均需要网络连接**。原始文件不会上传；仅传输生成文件名所需的最少内容，传输经 TLS 1.3 加密，处理完成后立即销毁。
 - 免费版每天提供 **60 个文件的 AI 处理额度**。
 
 ## 💡 使用场景
@@ -182,4 +185,83 @@ VID00023.mp4 → 【教程】PS技巧-第05集-图层混合_1080p_H265.mp4
 
 ---
 
+## ❓ 常见问题
+
+**Renomee AI 支持哪些文件类型？**  
+支持 PDF、Word/Excel/PowerPoint、JPEG/PNG/HEIC 图片、MP4/MOV/AVI 视频、MP3/M4A/WAV 音频，共 10+ 种格式。
+
+**重命名会损坏文件内容或元数据吗？**  
+不会。重命名操作仅修改文件名，不改变文件内容、图片质量或 EXIF 元数据。
+
+**文件会上传到服务器吗？**  
+不会上传原始文件。所有重命名功能均需联网，AI 仅传输文件必要内容（文档前 3 页文本或图片本身）用于分析，传输经 TLS 1.3 加密，处理完成后立即销毁，不做留存。
+
+**批量处理速度有多快？**  
+小文件批量重命名（1000+ 个）< 5 秒；50 个 5MB 文件内容提取约 30–60 秒；需要 OCR 的扫描版 PDF 约 5–15 个/分钟。
+
+**支持哪些操作系统？**  
+Windows 10 及以上版本；macOS 10.15（Catalina）及以上版本。
+
+**重命名后可以撤销吗？**  
+可以。每次操作均记录完整日志，在「历史记录 → 最近操作」中一键还原所有文件名。
+
+---
+
 **准备好开始了吗？** 👉 [立即下载](quickstart.md)
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Renomee AI 支持哪些文件类型？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Renomee AI 支持 10+ 种文件格式：PDF（提取标题、作者、正文）、Word/Excel/PowerPoint（识别文档标题、章节、工作表名）、JPEG/PNG/HEIC 图片（EXIF 元数据和 OCR 文字识别）、MP4/MOV/AVI 视频（标题、日期、分辨率）、MP3/M4A/WAV 音频（ID3 标签：歌手、歌名、专辑）。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Renomee AI 重命名会损坏文件内容吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不会。重命名操作仅修改文件名，不改变文件内容、图片像素、EXIF 元数据或任何内部数据。文件质量和所有嵌入信息保持 100% 完整。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Renomee AI 会将文件上传到服务器吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "原始文件不会上传。所有重命名功能均需联网，AI 仅传输文件必要内容用于分析：文档前 3 页的文本内容，或图片文件本身；Word/Excel 文件由客户端本地提取文本后再传输。所有传输经 TLS 1.3 加密，处理完成后立即销毁，不做留存。Renomee AI 采用最小化数据传输原则，确保您的文件隐私。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Renomee AI 批量重命名速度有多快？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "处理速度根据任务类型不同：小文件批量重命名（1000+ 个）完成时间不足 5 秒；50 个 5MB 文件内容提取约需 30–60 秒；20 个 30–50MB 大文件约需 60–120 秒；扫描版 PDF 的 OCR 处理约 5–15 个/分钟（单页）或 2–5 个/分钟（10–20 页文档）。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Renomee AI 支持哪些操作系统？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Renomee AI 支持 Windows 10 及以上版本（含 Windows 11）以及 macOS 10.15 Catalina 及以上版本（含 macOS Sonoma）。不支持 Linux 或移动端操作系统。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "批量重命名后可以撤销吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可以。Renomee AI 为每次操作记录完整的操作日志。在「历史记录 → 最近操作」中选择对应的批量重命名记录，点击「还原」即可将所有文件名恢复至重命名前的状态。"
+      }
+    }
+  ]
+}
+</script>

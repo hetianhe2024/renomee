@@ -5,7 +5,10 @@ description: Renomee AI is a batch file renaming tool for Windows and macOS that
 
 # Renomee AI - Smart File Renaming
 
-![Renomee Logo](https://renomeeai.com//static/media/logo.png)
+![Renomee Logo](https://renomeeai.com/logo192.png)
+
+!!! abstract "What Is Renomee AI?"
+    **Renomee AI** is a batch file renaming tool for Windows 10+ and macOS 10.15+ that uses AI and natural language rules to rename files based on their actual content. You describe your naming requirement in plain language; Renomee AI reads the file content—PDF text, photo EXIF metadata, scanned document OCR, audio/video tags—combines it with your instructions, and generates a descriptive filename automatically. For example: `scan001.pdf` → `Invoice_ABC_Corp_2024-03-16.pdf`, or `IMG_1234.jpg` → `2024-06-15_Paris_Canon_EOS_R6.jpg`. Supports files up to 50 MB; free tier includes **60 AI-processed files per day**. **Privacy**: original files are never uploaded—only the minimum necessary content is transmitted over TLS 1.3 and deleted immediately after processing.
 
 **Renomee AI is a batch file renaming tool for Windows and macOS that uses AI and OCR to rename files based on their actual content, using plain-language rules instead of regex.**
 
@@ -92,7 +95,7 @@ Renomee uses your files' content to generate names. What gets sent to the server
 **Key principles:**
 - Your files are **never stored** on Renomee servers — data is discarded immediately after processing.
 - All transmissions are encrypted (TLS 1.3).
-- AI-powered content analysis **requires an internet connection**. Basic renaming (prefix, suffix, numbering, EXIF dates) works fully offline.
+- **All Renomee AI features require an internet connection.** Only the minimum necessary data is transmitted — never your original file.
 - The free tier includes **60 AI-processed files per day**.
 
 For full details, see the [Privacy Policy](../about/privacy.md).
@@ -118,4 +121,83 @@ Archive invoices and contracts using OCR to automatically identify vendors and d
 
 ---
 
+## ❓ Frequently Asked Questions
+
+**What is Renomee AI?**  
+Renomee AI is a batch file renaming tool for Windows and macOS that uses AI to read file contents—PDF text, photo EXIF data, scanned document OCR, audio/video metadata—and renames files based on a plain-language rule you describe. No regex or coding required.
+
+**What file types does Renomee AI support?**  
+PDF, Word, Excel, PowerPoint, JPEG, PNG, HEIC, MP4, MOV, AVI, MP3, M4A, WAV — 10+ formats in total. Each type uses the most appropriate extraction method (metadata, text parsing, or OCR).
+
+**Does Renomee AI require an internet connection?**  
+Yes. All Renomee AI features require a network connection. Only the minimum necessary data is transmitted: the first 3 pages of a document's text, or the image file itself. Your original files are never uploaded or stored on Renomee servers. All data is encrypted (TLS 1.3) and deleted immediately after the filename is generated.
+
+**How accurate is AI-based content extraction?**  
+Accuracy by file type: well-formatted PDFs 95%+; photos with EXIF data 99%+; OCR on clear scans (300+ DPI) 90–95%; videos/audio with metadata 98%+. Always use Preview mode before executing batch renames.
+
+**How fast is batch renaming with Renomee AI?**  
+Small files (images, PDFs under 5 MB): 50–100 files per minute. OCR-required scans: 5–15 files per minute. Simple metadata-only renames (1,000+ files): under 5 seconds.
+
+**Can I undo a batch rename?**  
+Yes. Every operation is fully logged. Go to History → Recent Operations and click Revert to restore all original filenames instantly.
+
+---
+
 **Ready to start?** 👉 [Download Now](quickstart.md)
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Renomee AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Renomee AI is a batch file renaming tool for Windows 10+ and macOS 10.15+ that uses AI and natural language rules to rename files based on their actual content. You describe your naming requirement in plain language; Renomee AI reads the file content—PDF text, photo EXIF metadata, scanned document OCR, audio/video tags—and generates a descriptive filename automatically. Example: scan001.pdf becomes Invoice_ABC_Corp_2024-03-16.pdf. Free tier includes 60 AI-processed files per day."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What file types does Renomee AI support for content-based renaming?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Renomee AI supports 10+ file formats: PDF (title, author, body text up to 50 MB), Word/Excel/PowerPoint (document properties, headings, sheet names), JPEG/PNG/HEIC images (EXIF metadata and OCR text), MP4/MOV/AVI video (title, date, resolution), and MP3/M4A/WAV audio (ID3 tags: artist, song, album). Scanned PDFs and image-heavy documents are handled automatically via the built-in OCR engine."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Renomee AI require an internet connection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. All Renomee AI features require a network connection to process renaming requests. Privacy protection: only the minimum necessary data is transmitted—the first 3 pages of a document's text, or the image file itself (for Word/Excel, text is extracted locally before sending). Original files are never uploaded or stored on Renomee servers. All transmissions are encrypted with TLS 1.3 and data is deleted immediately after the filename is generated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate is Renomee AI content extraction for file renaming?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Accuracy by file type: well-formatted PDFs achieve 95%+ accuracy; photos with EXIF data reach 99%+ accuracy; OCR on clean scans (300+ DPI) is 90–95% accurate; OCR on low-quality scans falls to 70–85%; videos and audio files with metadata achieve 98%+ accuracy. Always use the Preview mode before executing batch renames to verify results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast is batch file renaming with Renomee AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Renomee AI batch processing speeds: small files (images, PDFs under 5 MB) process at 50–100 files per minute; medium files (5–20 MB) at 20–40 files per minute; large files (20–50 MB) at 10–20 files per minute; scanned PDFs requiring OCR at 5–15 files per minute (single-page) or 2–5 files per minute (10–20 page documents)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I undo a batch rename in Renomee AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Renomee AI logs every batch rename operation automatically. To revert: go to History → Recent Operations, select the operation, and click Revert. All original filenames are restored instantly. This undo log is stored locally on your device."
+      }
+    }
+  ]
+}
+</script>
