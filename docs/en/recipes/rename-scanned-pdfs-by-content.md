@@ -90,7 +90,7 @@ Fix: Include a disambiguating field: `Rename as: Title_Date.pdf`. Renomee also a
 ## FAQ
 
 **Does OCR send my documents to the cloud?**  
-No. All OCR processing runs locally on your machine. Your files are never uploaded.
+It depends. When AI-powered OCR is used (e.g., to extract text from scanned PDFs), only the **first 3 pages** of the document are sent to the Renomee AI server — after you grant permission in the app. The data is encrypted in transit and deleted immediately after processing. Your full file is never stored on our servers.
 
 **What's the maximum file size?**  
 50 MB per PDF. Files above this limit are skipped and flagged in the results list.

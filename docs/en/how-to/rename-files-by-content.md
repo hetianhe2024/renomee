@@ -454,7 +454,7 @@ See the [full list above](#file-types) for details on what gets extracted from e
 
 ### Does content extraction work offline?
 
-Yes, with **Renomee AI**—all processing happens locally on your computer. Your files are never uploaded. The AI models run on your device, ensuring complete privacy.
+Partially. Basic operations (prefix/suffix, sequential numbering, reading photo EXIF data, reading audio ID3 tags) work fully offline. AI-powered content extraction — reading text from PDFs, OCR on scanned documents, and image understanding — requires a network connection. In those cases, only the minimum necessary data is sent: the first 3 pages of a document, or the image file itself (for Word/Excel, the text is extracted locally first). Your files are never stored on Renomee servers; all transmitted data is encrypted and deleted immediately after processing.
 
 ### How accurate is the content extraction?
 

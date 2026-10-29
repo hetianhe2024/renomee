@@ -558,7 +558,7 @@ Continue learning about smart document management:
 - ⚖️ [Rename Contract PDFs](https://renomeeai.com/en/rename-files/pdf/rename-contract-pdf/) — NDA, MSA, SOW by client name and date
 - 🏦 [Rename Bank Statement PDFs](https://renomeeai.com/en/rename-files/pdf/rename-bank-statement-pdf/) — Organize statements from multiple banks
 - 🧾 [Rename Receipt PDFs](https://renomeeai.com/en/rename-files/pdf/rename-receipt-pdf/) — Auto-name by store, date, and amount
-- 🏥 [Rename Medical PDFs](https://renomeeai.com/en/rename-files/pdf/rename-medical-pdf/) — Patient records and lab reports, fully offline
+- 🏥 [Rename Medical PDFs](https://renomeeai.com/en/rename-files/pdf/rename-medical-pdf/) — Patient records and lab reports with privacy-focused processing
 - 📊 [Batch Process Business Documents](../../use-cases/business/batch-process-documents.md) — Workflow optimization
 
 ---

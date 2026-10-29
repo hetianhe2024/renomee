@@ -35,15 +35,24 @@ Renomee will warn you during the Preview step. By default, it can automatically 
 ## 🛡️ Privacy & Security
 
 ### Is my data safe?
-Yes. Renomee processes your files **locally** on your computer. We do not upload your files to our servers.
+Yes. Renomee is designed to send only the minimum data necessary. What gets transmitted depends on the rename rule:
+
+- **No content needed** (add prefix, numbering, EXIF date, etc.): only the filename and file metadata are sent. Your file content is never transmitted.
+- **Content-based renaming** (PDF, images, scanned docs): only the **first 3 pages** of a document or the image file is sent to the AI server. This requires your explicit permission in the app.
+- **Word / Excel files**: Renomee reads the first 3 pages **locally on your device**, then sends only that extracted text to the server. The original file is never uploaded.
+
+Transmitted data is encrypted (TLS 1.3) and is discarded immediately after processing — nothing is stored on our servers.
 
 ### Does AI Mode require an internet connection?
-Basic metadata extraction (like photo dates) works offline. Advanced AI features like content summarization or complex OCR may require a brief connection to process text snippets, but your actual files are never stored on our servers.
+**Yes, for content-based AI analysis.** Basic operations — renaming by prefix/suffix, sequential numbering, reading EXIF date from photos — work fully offline. Any feature that requires the AI to read and understand file content (document titles, OCR of scanned pages, image descriptions) requires a network connection to the Renomee AI server.
+
+### Does Renomee store my files or their content on a server?
+No. Data sent to the server (text snippets or partial page content) is used only for the current rename request and deleted immediately after. Renomee does not maintain a copy of any file or its content.
 
 ## 💳 Licensing & Support
 
 ### Is Renomee free?
-Renomee offers a **Free Version** that includes all basic features for up to 100 files per task. The **Pro Version** removes file limits and unlocks advanced features like Regex, Scripting, and full AI capabilities.
+Renomee offers a **Free Plan** with a daily quota of **60 AI-processed files per day**. Basic renaming operations (prefix/suffix, numbering, date-based rules) have no quota limit. The **Pro Version** removes daily limits and unlocks advanced features like Regex, Scripting, and unlimited AI processing.
 
 ### How many devices can I use with one license?
 A personal license allows you to activate Renomee on up to **3 devices** (e.g., your laptop, desktop, and a work computer).

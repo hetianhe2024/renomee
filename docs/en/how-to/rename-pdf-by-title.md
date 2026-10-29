@@ -264,11 +264,11 @@ If no title can be extracted, Renomee falls back to using the first line of text
 
 ### Is there a limit to how many files I can rename?
 
-The free version supports up to 100 files per batch. For larger batches or commercial use, consider the [Pro version](https://renomeeai.com/pricing) with unlimited processing.
+The free version includes **60 AI-processed files per day**. Basic renaming (metadata-only, no AI content analysis) has no quota limit. For higher daily volumes or commercial use, consider the [Pro version](https://renomeeai.com/pricing) with unlimited processing.
 
 ### Does this work offline?
 
-Yes, 100% offline. All processing happens locally on your computer. Your PDF content is never uploaded to any server, ensuring complete privacy and security.
+It depends on how Renomee extracts the title. Reading standard PDF metadata (the document's built-in title field) works fully offline. If the PDF lacks embedded text and OCR is needed, or if AI-based content analysis is used, a network connection is required. In that case, only the **first 3 pages** are sent to the Renomee AI server (with your permission); the data is encrypted and deleted immediately after processing. Your full file is never stored on our servers.
 
 ---
 

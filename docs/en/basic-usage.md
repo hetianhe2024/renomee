@@ -54,18 +54,29 @@ You can customize dates: `{date:YYYYMMDD}` or `{date:MMM_DD_YYYY}`.
 
 Enable **AI Mode** to unlock deep content analysis. Renomee will "look" inside your files to help you name them better.
 
+!!! info "Network requirement & what is transmitted"
+    AI content analysis requires an internet connection. What is sent to the server depends on the file type:
+
+    | File type | What is transmitted |
+    | :--- | :--- |
+    | Rule needs no file content (prefix, numbering, etc.) | Filename + metadata only. File content is never sent. |
+    | PDF / scanned documents / images | First 3 pages or the image itself — after your in-app permission. |
+    | Word / Excel | Renomee reads the first 3 pages locally, then sends only the extracted text. The original file is not uploaded. |
+
+    All data is encrypted in transit and deleted immediately after processing.
+
 ### Document Analysis
-- **PDFs & Office Docs**: Extracts titles, authors, and key topics.
-- **Large Files**: Optimized support for documents up to 50MB.
-- **Smart OCR**: Automatically reads text from scanned PDFs that don't have selectable text.
+- **PDFs**: Extracts titles, authors, and key text from the first 3 pages. For scanned PDFs without selectable text, OCR is applied to those pages automatically.
+- **Word / Excel**: Renomee reads the first 3 pages locally and sends only the extracted text to the AI server.
+- **Large Files**: Supported up to 50 MB. Only the first 3 pages are analyzed for content extraction.
 
 ### Image Recognition
-- **EXIF Data**: Uses capture date, camera model, and GPS location.
-- **OCR for Images**: Extracts text from screenshots, business cards, and ID photos.
+- **EXIF Data**: Capture date, camera model, and GPS location — extracted locally, no server call needed.
+- **OCR for Images**: Extracts text from screenshots, business cards, and ID photos (requires network).
 
 ### Audio & Video
-- **Music**: Reads ID3 tags like Artist, Album, and Genre.
-- **Video**: Identifies resolution (1080p, 4K), duration, and codec.
+- **Music**: Reads ID3 tags like Artist, Album, and Genre — extracted locally.
+- **Video**: Identifies resolution (1080p, 4K), duration, and codec — extracted locally.
 
 ## 👁️ Preview & Execute
 

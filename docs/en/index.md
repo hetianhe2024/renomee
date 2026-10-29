@@ -9,7 +9,7 @@ description: Renomee AI is a batch file renaming tool for Windows and macOS that
 
 **Renomee AI is a batch file renaming tool for Windows and macOS that uses AI and OCR to rename files based on their actual content, using plain-language rules instead of regex.**
 
-No complex expressions, no scripting. Just describe what you want — Renomee reads the file, extracts what matters (title, date, vendor, author), and renames it in seconds. Supports Windows 10+ and macOS 10.15+, processes up to 50 MB files, runs 100% locally.
+No complex expressions, no scripting. Just describe what you want — Renomee reads the file, extracts what matters (title, date, vendor, author), and renames it in seconds. Supports Windows 10+ and macOS 10.15+, processes files up to 50 MB.
 
 ## 🎯 Why Renomee?
 
@@ -20,7 +20,7 @@ Forget about learning complex regular expressions. Renomee AI makes renaming as 
 - 🧠 **Deep Content Understanding** - Goes beyond filenames to "read" inside documents (supports files up to 50MB).
 - 🖼️ **Smart OCR** - Automatically extracts text from scanned PDFs, screenshots, and ID photos.
 - ⚡ **Optimized Batch Processing** - Queue-based architecture handles hundreds of files smoothly with real-time feedback.
-- 🔒 **Privacy First** - All processing happens locally. Your files are never uploaded, keeping your data secure.
+- 🔒 **Privacy by Design** - Only the minimum necessary data is sent to the server. Your actual files are never stored remotely. See [how data transmission works](#how-data-is-handled).
 - 📱 **Cross-Platform** - Fully supports Windows 10+ and macOS 10.15+.
 
 ## 🚀 Quick Start
@@ -78,6 +78,24 @@ Our queue-based system ensures a smooth experience even with large datasets:
 - ✅ **Real-time Feedback** - Detailed progress bars and status updates.
 - ✅ **Smart Queueing** - Automatic task management to prevent system lag.
 - ✅ **Multi-folder Support** - Process files from different locations simultaneously.
+
+## 🔐 How Data Is Handled {#how-data-is-handled}
+
+Renomee uses your files' content to generate names. What gets sent to the server depends on the rename rule you apply:
+
+| Scenario | What is sent to server |
+| :--- | :--- |
+| **Rule doesn't need file content** (e.g., add prefix, sequential numbering) | Filename + file metadata only (size, type, date). File contents are never transmitted. |
+| **Rule needs file content** — PDF, images, scanned documents | Only the **first 3 pages** of a document, or the image file itself. Requires your explicit in-app permission. |
+| **Structured formats** — Word, Excel | Renomee reads the first 3 pages **locally**, then sends that extracted text to the AI server. The original file is never uploaded. |
+
+**Key principles:**
+- Your files are **never stored** on Renomee servers — data is discarded immediately after processing.
+- All transmissions are encrypted (TLS 1.3).
+- AI-powered content analysis **requires an internet connection**. Basic renaming (prefix, suffix, numbering, EXIF dates) works fully offline.
+- The free tier includes **60 AI-processed files per day**.
+
+For full details, see the [Privacy Policy](../about/privacy.md).
 
 ## 💡 Use Cases
 

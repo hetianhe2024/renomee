@@ -1,5 +1,5 @@
 ---
-title: How-To Guides - Renomee AI Tutorials
+title: Tutorials & Examples - Renomee AI
 description: Learn how to use Renomee AI to solve various file renaming challenges. From PDF batch renaming to photo organization, covering common use cases with detailed step-by-step guides.
 ---
 
