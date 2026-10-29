@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renomee Pricing Checklist</title>
+  <style>
+    /* ── Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a2e;
+      padding: 32px 24px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 8px;
+    }
+    .logo {
+      width: 44px; height: 44px;
+      background: #4f46e5;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 22px;
+    }
+    h1 { font-size: 26px; font-weight: 700; color: #111; }
+    .subtitle {
+      font-size: 14px; color: #666;
+      margin-bottom: 28px;
+      padding-left: 58px;
+    }
+
+    /* ── Highlights bar ── */
+    .highlights {
+      display: flex; gap: 12px; flex-wrap: wrap;
+      background: #eef9f2; border: 1px solid #b2dfcc;
+      border-radius: 10px; padding: 12px 16px;
+      margin-bottom: 28px; font-size: 13px; color: #1e7a4b; font-weight: 600;
+    }
+    .highlights span::before { content: "✓  "; }
+
+    /* ── Plan grid ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 20px;
+      position: relative;
+    }
+    .card.featured {
+      border-color: #4f46e5;
+      background: linear-gradient(135deg, #eef0ff 0%, #f8f8ff 100%);
+    }
+    .badge {
+      position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+      background: #4f46e5; color: white;
+      font-size: 11px; font-weight: 700; letter-spacing: 0.5px;
+      padding: 4px 14px; border-radius: 20px; white-space: nowrap;
+      text-transform: uppercase;
+    }
+
+    .plan-name {
+      font-size: 11px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: #888;
+      margin-bottom: 6px;
+    }
+    .price {
+      font-size: 32px; font-weight: 800; color: #111;
+      line-height: 1;
+    }
+    .price span { font-size: 14px; font-weight: 500; color: #666; margin-left: 2px; }
+    .desc { font-size: 12px; color: #777; margin: 8px 0 14px; }
+
+    .checklist { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+    .checklist li { font-size: 13px; color: #333; display: flex; gap: 8px; }
+    .checklist li::before { content: "✓"; color: #22c55e; font-weight: 700; flex-shrink: 0; }
+
+    /* ── Quota note ── */
+    .quota-note {
+      margin-top: 28px;
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 16px 20px;
+    }
+    .quota-note h3 { font-size: 14px; font-weight: 700; margin-bottom: 8px; color: #4f46e5; }
+    .quota-steps {
+      display: flex; gap: 0; counter-reset: step;
+      flex-wrap: wrap;
+    }
+    .step {
+      flex: 1; min-width: 140px;
+      display: flex; flex-direction: column; align-items: center;
+      text-align: center; padding: 8px 4px; position: relative;
+    }
+    .step::after {
+      content: "→";
+      position: absolute; right: -8px; top: 50%; transform: translateY(-50%);
+      color: #aaa; font-size: 16px;
+    }
+    .step:last-child::after { display: none; }
+    .step-num {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: #4f46e5; color: white;
+      font-size: 13px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 6px;
+    }
+    .step-text { font-size: 12px; color: #555; }
+
+    /* ── Footer ── */
+    .footer {
+      margin-top: 24px; text-align: center;
+      font-size: 12px; color: #aaa;
+    }
+    .footer a { color: #4f46e5; text-decoration: none; }
+
+    /* ── Print ── */
+    @media print {
+      body { background: white; padding: 16px; }
+      .card { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">✦</div>
+    <h1>Renomee — Pricing Checklist</h1>
+  </div>
+  <p class="subtitle">Simple pricing for every batch · <a href="https://renomeeai.com/en/product/pricing/" style="color:#4f46e5;text-decoration:none">renomeeai.com/pricing</a></p>
+
+  <div class="highlights">
+    <span>Free daily quota</span>
+    <span>One-time pass available</span>
+    <span>Preview first, pay only for larger execution</span>
+  </div>
+
+  <div class="grid">
+
+    <!-- FREE -->
+    <div class="card">
+      <div class="plan-name">Free</div>
+      <div class="price">$0 <span>/ daily quota</span></div>
+      <p class="desc">Best for trying Renomee and handling small daily batches.</p>
+      <ul class="checklist">
+        <li>3-day trial: 80 executed renames / day</li>
+        <li>Keep 60 free executed renames / day after trial</li>
+        <li>Preview AI rename results before applying</li>
+        <li>Natural language rename rules</li>
+        <li>Local content reading for supported files</li>
+      </ul>
+    </div>
+
+    <!-- SHORT PASS -->
+    <div class="card">
+      <div class="plan-name">Short Pass</div>
+      <div class="price">$6.99 <span>/ 7 days</span></div>
+      <p class="desc">Best for one folder cleanup, migration, or archive project.</p>
+      <ul class="checklist">
+        <li>5,000 executed renames over 7 days</li>
+        <li>One-time payment, no auto-renewal</li>
+        <li>Same AI rename features as paid plans</li>
+        <li>Full preview before execution</li>
+        <li>Ideal for occasional large batches</li>
+      </ul>
+    </div>
+
+    <!-- MONTHLY PRO -->
+    <div class="card featured">
+      <div class="badge">Best for recurring work</div>
+      <div class="plan-name" style="margin-top:8px">Monthly Pro</div>
+      <div class="price">$9.99 <span>/ month</span></div>
+      <p class="desc">Best for recurring photo, document, research, and content workflows.</p>
+      <ul class="checklist">
+        <li>30,000 executed renames / month</li>
+        <li>Built for ongoing batch work</li>
+        <li>Cancel anytime</li>
+        <li>Full AI content extraction and preview</li>
+        <li>Priority for frequent users</li>
+      </ul>
+    </div>
+
+    <!-- LIFETIME -->
+    <div class="card">
+      <div class="plan-name">Lifetime</div>
+      <div class="price">$59.99 <span>/ pay once</span></div>
+      <p class="desc">Best if you prefer desktop utilities without subscriptions.</p>
+      <ul class="checklist">
+        <li>Pay once and keep using Renomee</li>
+        <li>Fair-use execution quota</li>
+        <li>Good for long-term personal workflows</li>
+        <li>No monthly billing</li>
+        <li>Includes core AI rename features</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Quota note -->
+  <div class="quota-note">
+    <h3>How Quota Works</h3>
+    <div class="quota-steps">
+      <div class="step"><div class="step-num">1</div><div class="step-text">Preview results</div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-text">Confirm execution</div></div>
+      <div class="step"><div class="step-num">3</div><div class="step-text">Execution uses quota</div></div>
+      <div class="step"><div class="step-num">4</div><div class="step-text">Upgrade for larger batches</div></div>
+    </div>
+    <p style="font-size:12px;color:#666;margin-top:10px">
+      Renomee limits actual rename <strong>execution</strong>, not AI previews.
+      You can inspect results before spending quota or upgrading.
+    </p>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 Renomee · <a href="https://renomeeai.com/en/product/pricing/">View full pricing page</a></p>
+    <p style="margin-top:4px">To save as PDF: open this file in browser → Ctrl+P (or ⌘P) → Save as PDF</p>
+  </div>
+
+</body>
+</html>
