@@ -22,7 +22,7 @@ This page provides detailed instructions for installing Renomee AI on your syste
 ## 📥 Getting the Installer
 
 ### Option 1: Official Website (Recommended)
-Visit [Renomee AI Official Download Page](https://renomeeai.com/en/product/download/). The site will automatically detect your OS and suggest the right version.
+[Download RenomeeAI](https://renomeeai.com/en/product/download/). The official download page detects your operating system and suggests the right version.
 
 ### Option 2: GitHub
 Download from [GitHub Releases](https://github.com/hetianhe2024/renomee/releases):

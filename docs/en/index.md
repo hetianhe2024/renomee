@@ -12,6 +12,9 @@ description: Renomee AI is a batch file renaming tool for Windows and macOS that
 
 **Renomee AI is a batch file renaming tool for Windows and macOS that uses AI and OCR to rename files based on their actual content, using plain-language rules instead of regex.**
 
+!!! info "Official Documentation"
+    This site is the official technical documentation for RenomeeAI, including AI batch file renaming, OCR, PDF content extraction, and metadata-based renaming. Download the app and see product details on the [RenomeeAI Official Website](https://renomeeai.com/).
+
 No complex expressions, no scripting. Just describe what you want — Renomee reads the file, extracts what matters (title, date, vendor, author), and renames it in seconds. Supports Windows 10+ and macOS 10.15+, processes files up to 50 MB.
 
 ## 🎯 Why Renomee?
@@ -113,6 +116,7 @@ Archive invoices and contracts using OCR to automatically identify vendors and d
 
 ## 🎓 Resources
 
+- 🌐 [RenomeeAI Official Website](https://renomeeai.com/) - Product home, downloads, and feature pages.
 - 🚀 [Quick Start](quickstart.md) - Get up and running in 5 minutes.
 - 📖 [User Guide](installation.md) - Detailed feature documentation.
   - ⚙️ [Installation](installation.md) - Requirements and setup steps.
@@ -143,7 +147,29 @@ Yes. Every operation is fully logged. Go to History → Recent Operations and cl
 
 ---
 
-**Ready to start?** 👉 [Download Now](quickstart.md)
+**Ready to start?** 👉 [Download RenomeeAI](https://renomeeai.com/en/product/download/)
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://renomeeai.readthedocs.io/en/latest/en/#website",
+  "name": "Renomee AI Documentation",
+  "url": "https://renomeeai.readthedocs.io/en/latest/en/",
+  "description": "Official technical documentation for RenomeeAI, including AI batch file renaming, OCR, PDF content extraction, and metadata-based renaming.",
+  "about": {
+    "@type": "SoftwareApplication",
+    "@id": "https://renomeeai.com/#software",
+    "name": "RenomeeAI",
+    "url": "https://renomeeai.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://renomeeai.com/#organization",
+    "name": "Beijing Xiaojing Shanyue Technology Co., Ltd."
+  }
+}
+</script>
 
 <script type="application/ld+json">
 {
