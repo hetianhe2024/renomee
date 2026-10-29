@@ -32,6 +32,7 @@ theme:
   features:
     - navigation.instant      # 即时加载
     - navigation.tracking     # 跟踪锚点
+    - navigation.tabs         # 顶部导航 Tab（4 个内容域）
     - navigation.sections     # 侧边栏分组标题
     - navigation.indexes      # 分组首页支持
     - navigation.top          # 返回顶部按钮
@@ -42,33 +43,43 @@ theme:
     repo: fontawesome/brands/github
 
 # 导航结构
+# 顶部 4 个 Tab 对应 4 个内容域，侧边栏在各自 Tab 内按任务分组
 nav:
-  - 快速入门:
-      - 产品简介: index.md
-      - 安装说明: guide/installation.md
-      - 快速上手: quickstart.md
 
-  - 使用指南:
-      - 基础操作: guide/basic-usage.md
-      - AI 模式与高级功能: guide/advanced-features.md
+  # Tab 1：学习 —— 新用户入门 + 核心功能说明
+  - 学习:
+      - 快速入门:
+          - 产品简介: index.md
+          - 安装说明: guide/installation.md
+          - 快速上手: quickstart.md
+      - 使用指南:
+          - 基础操作: guide/basic-usage.md
+          - AI 模式与高级功能: guide/advanced-features.md
 
-  - 教程与示例:
+  # Tab 2：教程 —— 按任务场景分组，内容可持续扩充
+  - 教程:
       - how-to/index.md
-      - 根据标题重命名 PDF: how-to/rename-pdf-by-title.md
-      - 按内容智能重命名文件: how-to/rename-files-by-content.md
-      - 扫描版 PDF 自动重命名: how-to/rename-scanned-pdfs-automatically.md
-      - 按 EXIF 批量重命名照片: how-to/batch-rename-photos-by-exif.md
-      - 发票按供应商和日期重命名: recipes/rename-invoices-by-vendor-date.md
-      - 合同按甲乙方和日期重命名: recipes/rename-contracts-by-party-date.md
-      - 学术论文按标题和作者重命名: recipes/rename-research-papers-by-title-author.md
-      - 扫描 PDF 按内容重命名（OCR）: recipes/rename-scanned-pdfs-by-content.md
-      - 照片按 EXIF 日期批量重命名: recipes/rename-photos-by-exif-date.md
-      - MP3 按 ID3 标签重命名: recipes/rename-mp3-by-id3-tag.md
+      - PDF 与文档:
+          - 根据标题重命名 PDF: how-to/rename-pdf-by-title.md
+          - 按内容智能重命名文件: how-to/rename-files-by-content.md
+          - 扫描版 PDF 自动重命名: how-to/rename-scanned-pdfs-automatically.md
+          - 扫描 PDF 按内容重命名（OCR）: recipes/rename-scanned-pdfs-by-content.md
+      - 办公与财务:
+          - 发票按供应商和日期重命名: recipes/rename-invoices-by-vendor-date.md
+          - 合同按甲乙方和日期重命名: recipes/rename-contracts-by-party-date.md
+          - 学术论文按标题和作者重命名: recipes/rename-research-papers-by-title-author.md
+      - 照片与媒体:
+          - 按 EXIF 批量重命名照片: how-to/batch-rename-photos-by-exif.md
+          - 照片按 EXIF 日期批量重命名: recipes/rename-photos-by-exif-date.md
+          - MP3 按 ID3 标签重命名: recipes/rename-mp3-by-id3-tag.md
 
+  # Tab 3：参考 —— 查规格、查对比，内容扩充时按文件类型加页面
   - 参考:
-      - PDF 文件支持详情: file-types/pdf/index.md
+      - 支持的文件类型:
+          - PDF 文件: file-types/pdf/index.md
       - 工具对比: alternatives/index.md
 
+  # Tab 4：帮助 —— 固定入口，不随内容扩充而增长
   - 帮助:
       - 常见问题: faq.md
       - 隐私与数据安全: about/privacy.md
@@ -151,6 +162,7 @@ plugins:
           build: true
           site_name: Renomee AI 文档
           nav_translations:
+            学习: 学习
             快速入门: 快速入门
             产品简介: 产品简介
             安装说明: 安装说明
@@ -158,19 +170,23 @@ plugins:
             使用指南: 使用指南
             基础操作: 基础操作
             AI 模式与高级功能: AI 模式与高级功能
-            教程与示例: 教程与示例
+            教程: 教程
+            PDF 与文档: PDF 与文档
             根据标题重命名 PDF: 根据标题重命名 PDF
             按内容智能重命名文件: 按内容智能重命名文件
             扫描版 PDF 自动重命名: 扫描版 PDF 自动重命名
-            按 EXIF 批量重命名照片: 按 EXIF 批量重命名照片
+            扫描 PDF 按内容重命名（OCR）: 扫描 PDF 按内容重命名（OCR）
+            办公与财务: 办公与财务
             发票按供应商和日期重命名: 发票按供应商和日期重命名
             合同按甲乙方和日期重命名: 合同按甲乙方和日期重命名
             学术论文按标题和作者重命名: 学术论文按标题和作者重命名
-            扫描 PDF 按内容重命名（OCR）: 扫描 PDF 按内容重命名（OCR）
+            照片与媒体: 照片与媒体
+            按 EXIF 批量重命名照片: 按 EXIF 批量重命名照片
             照片按 EXIF 日期批量重命名: 照片按 EXIF 日期批量重命名
             MP3 按 ID3 标签重命名: MP3 按 ID3 标签重命名
             参考: 参考
-            PDF 文件支持详情: PDF 文件支持详情
+            支持的文件类型: 支持的文件类型
+            PDF 文件: PDF 文件
             工具对比: 工具对比
             帮助: 帮助
             常见问题: 常见问题
@@ -182,6 +198,7 @@ plugins:
           build: true
           site_name: Renomee AI Documentation
           nav_translations:
+            学习: Learn
             快速入门: Get Started
             产品简介: Overview
             安装说明: Installation
@@ -189,19 +206,23 @@ plugins:
             使用指南: User Guide
             基础操作: Basic Operations
             AI 模式与高级功能: AI Mode & Advanced Features
-            教程与示例: Tutorials & Examples
+            教程: Tutorials
+            PDF 与文档: PDFs & Documents
             根据标题重命名 PDF: Rename PDFs by Title
             按内容智能重命名文件: Rename Files by Content
             扫描版 PDF 自动重命名: Rename Scanned PDFs Automatically
-            按 EXIF 批量重命名照片: Batch Rename Photos by EXIF
+            扫描 PDF 按内容重命名（OCR）: Rename Scanned PDFs by Content (OCR)
+            办公与财务: Office & Finance
             发票按供应商和日期重命名: Rename Invoices by Vendor & Date
             合同按甲乙方和日期重命名: Rename Contracts by Party & Date
             学术论文按标题和作者重命名: Rename Research Papers by Title & Author
-            扫描 PDF 按内容重命名（OCR）: Rename Scanned PDFs by Content (OCR)
+            照片与媒体: Photos & Media
+            按 EXIF 批量重命名照片: Batch Rename Photos by EXIF
             照片按 EXIF 日期批量重命名: Batch Rename Photos by EXIF Date
             MP3 按 ID3 标签重命名: Rename MP3s by ID3 Tag
             参考: Reference
-            PDF 文件支持详情: PDF File Support
+            支持的文件类型: Supported File Types
+            PDF 文件: PDF Files
             工具对比: Alternatives
             帮助: Help
             常见问题: FAQ
